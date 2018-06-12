@@ -1,7 +1,5 @@
-#Projeto de TCC Simios
+Projeto de TCC - SIMIOS
 
-Autores
-Larissa
-Leon
-Luciana
-Pedro
+Arquivos para a operação do Raspberry Pi 
+
+Tem o objetvo de fazer a intermediação da comunicação entre as placas Sensor Tag, nos macacos; e o banco de dados.
