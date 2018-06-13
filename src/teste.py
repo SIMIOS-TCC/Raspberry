@@ -1,4 +1,4 @@
-from QueriesMYSQL import *
+'''from QueriesMYSQL import *
 
 # Variaveis para testar as conexoes
 colunasExemplo = [["ID", "INT NOT NULL AUTO_INCREMENT"], ["nome", "VARCHAR(255) NULL"], ["sobrenome", "VARCHAR(255) NULL"]]
@@ -16,4 +16,9 @@ def main():
 
     deletar("teste")
 
-    #ler("simio", ["*"])
+    #ler("simio", ["*"])'''
+
+import Arquivos
+
+leitura = Arquivos.pegaDados(Arquivos.DADOS)
+print (leitura)

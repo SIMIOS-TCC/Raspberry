@@ -1,0 +1,4 @@
+ID0;Timestamp0;ID1;Distancia1;ID2;Distancia2;
+ID1;Timestamp1;ID0;Distancia0;ID2;Distancia2;
+ID0;Timestamp2;ID1;Distancia1;ID2;Distancia2;
+ID1;Timestamp3;ID0;Distancia0;ID2;Distancia2;
