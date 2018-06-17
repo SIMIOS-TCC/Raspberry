@@ -26,7 +26,7 @@ def criar(tabela, colunas=[]):
 def inserir(tabela, colunas=[], valores=[]):
     ''' Funcao para inserir linhas em uma tabela dentro do banco de dados conectado.
         Ela toma o nome da tabela em string como parametro e tambem
-        as colunas nas quias deve se inserir os valores desta forma:
+        as colunas nas quais deve se inserir os valores desta forma:
             [coluna1, caluna2]
         e os valores para inserir nestas colunas desta forma:
             [[valor1Coluna1, valor1Coluna2], [valor2Coluna1, valor2Coluna2]]
@@ -85,19 +85,19 @@ def executar(query):
     if conexao is not None:                                     #Caso a conexao tenha sido um sucesso...
         cursor = conexao.cursor()                               #Inicializa o cursor do banco
 
-        print "Executando a query: " + query                    #Para fins de debug
+        logger.debug("Executando a query: %s", query)           #Para fins de debug
         
         try:
             cursor.execute(query)                               #Tenta executar a query passada
             conexao.commit()                                    #Se ha sucesso, confirma as mudancas
             
             for linha in cursor.fetchall():                     #Caso haja informacao que o cursor foi buscar
-                print linha                                     #   inprime ela na tela.
+                print (linha)                                   #   inprime ela na tela.
                 
-            print "Tudo OK"                                     #Para fins de debug
+            logger.debug("Tudo OK")       #Para fins de debug
             
         except MySQLdb.Error, erro:                             #Caso haja algum problema com a execucao
-            print "Erro na execucao da query: %s. \n [%d]: %s" % (query, erro.args[0], erro.args[1])
+            logger.error("Erro na execução da Query: %s ", query, exc_info=True)
             conexao.rollback()                                  #   desfazemos-la e verificamos o erro.
             
         finally:
@@ -116,5 +116,33 @@ def conectar(host=HOST, user=USER, passwd=PASSWORD, db=DB, port=PORT):
         return conexao                                          #A conexao so e realizada quando for necessario.
     
     except MySQLdb.Error, erro:
-        print "Erro na conexao com MYSQL. \n [%d]: %s" % (erro.args[0], erro.args[1])
+        logger.error("Erro na conexão com o Banco de Dados", exc_info=True)
         return None
+
+def iniciaLogger():
+    ''' Inicia as opções para o logger.
+        Reunidas aqui para organização.
+        Retorna o logger para ser usado pelo módulo. '''
+
+    logger = logging.getLogger(__name__)# Pega no nome do módulo para o logger.   
+    logger.setLevel(logging.DEBUG)      # Define o nível mínimo de filtro dos logs (deixar sempre em DEBUG).
+
+    # Cria um logger para a tela
+    handler = logging.StreamHandler()
+    handler.setLevel(logging.DEBUG) #Mudar para INFO, WARNING ou ERROR em produção.
+    formatter = logging.Formatter( '%(levelname)-8s : %(message)s' )
+    handler.setFormatter(formatter)
+    
+    logger.addHandler(handler)
+
+    # Cria um logger para arquivo
+    handler = logging.FileHandler(CAMINHO + '/' + 'registro.log')
+    handler.setLevel(logging.INFO)
+    formatter = logging.Formatter( '%(asctime)s %(name)-12s %(levelname)-8s %(message)s' )
+    handler.setFormatter(formatter)
+
+    logger.addHandler(handler)
+
+    return logger
+
+logger = iniciaLogger()
