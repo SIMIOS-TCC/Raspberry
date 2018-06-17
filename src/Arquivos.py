@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 import logging
-import Classes
+from Classes import *
 
 CAMINHO = "arquivos"
 ARQUIVO_DADOS = "dados.txt"
@@ -8,12 +9,12 @@ ARQUIVO_BACKUP = "backup.txt"
 def pegaDados():
     ''' Pega os dados do arquivo de dados especificado
         e retorna uma Leitura dos dados.
-        Além disso, faz um backup e limpa o arquivo de dados.'''
+        Alem disso, faz um backup e limpa o arquivo de dados.'''
 
-    info = [] #Guaardará as informações a serem passadas como dados.
+    info = [] #Guardara as informações a serem passadas como dados.
     
     dados = abreArquivo(ARQUIVO_DADOS)
-    logger.debug("Pegando dados: %s ", dados)
+    logger.debug("Pegando dados: %s \n", dados)
     
     if dados:
         
@@ -49,7 +50,7 @@ def abreArquivo(arquivo):
     try:
         with open(CAMINHO + '/' + arquivo, 'r') as arquivoDados:
             dados = arquivoDados.read()
-        logger.debug("Lendo arquivo: %s ", arquivo)
+        logger.info("Acesso ao arquivo: %s ", arquivo)
     except (IOError, FileNotFoundError):
         logger.warning("Arquivo não encontrado: %s ", arquivo)
         open (CAMINHO + '/' + arquivo, 'w').close()
@@ -74,7 +75,7 @@ def backup(dados):
 def limpaArquivo(arquivo):
     try:
         open(CAMINHO + '/' + arquivo, 'w').close()
-        logger.info("Arquivo limpo: %s ", arquivo)
+        logger.debug("Arquivo limpo: %s ", arquivo)
     except:
         logger.error("Falha ao limpar o arquivo: %s ", arquivo, exc_info=True)
     

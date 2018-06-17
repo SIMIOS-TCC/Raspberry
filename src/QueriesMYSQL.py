@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
 import MySQLdb
+import logging
+CAMINHO = 'arquivos/'
 
 #Valores default
-HOST = "192.168.0.1"
+HOST = "192.168.0.8"
 USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
 DB = "simios_db"                # Banco de dados ao qual querremos conectar.

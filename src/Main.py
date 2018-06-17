@@ -1,8 +1,15 @@
+# -*- coding: utf-8 -*-
+
 import Arquivos
 import QueriesMYSQL
+import logging
+CAMINHO = 'arquivos/'
+
+colunasExemplo = [["ID", "INT NOT NULL AUTO_INCREMENT"], ["timestamp", "INT NOT NULL"], ["ID1", "INT NOT NULL"], ["distancia1", "INT NOT NULL"]]
+colunasInserir = ["ID", "timestamp", "ID1", "distancia1"]
 
 def Main():
-    dados = pegaDados()
+    dados = Arquivos.pegaDados()
 
     #Trata os dados antes de mandar.
     #EX: timestamp e distância...
@@ -10,8 +17,8 @@ def Main():
     #Manda queries com os dados tratados
     for leitura in dados:
         for distancia in leitura.distancias:
-            #insert(distancia, [ID, timestamp, ID_distancia, valor_distancia], [leitura.ID, leitura.timestamp, distancia.ID, distancia.valor])
-            logger.debug("Emitindo insert: %s", leitura)
+            QueriesMYSQL.inserir("teste", colunasInserir, [[leitura.ID, leitura.timestamp, distancia.ID, distancia.valor]])
+            logger.debug("Emitindo insert: leitura: %s com distancias: &s \n", leitura, distancia)
 
 def checaInt(string):
     '''Checa se um string representa um inteiro
@@ -57,4 +64,12 @@ def iniciaLogger():
 
 logger = iniciaLogger()
 
+QueriesMYSQL.criar("teste", colunasExemplo)
+
 Main()
+
+QueriesMYSQL.ler("teste", colunasInserir)
+
+raw_input("Pressione ENTER para deletar")
+
+QueriesMYSQL.deletar("teste")
