@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 import MySQLdb
+import ConfigParser
 import logging
+
 CAMINHO = 'arquivos/'
+ARQUIVO_LOGGER = 'registro.log'
+ARQUIVO_CONFIG = 'config.ini'
 
 #Valores default
-#HOST = "192.168.0.8"
-HOST = "169.254.163.8"
+HOST = "192.168.0.8"
 USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
 DB = "simios_db"                # Banco de dados ao qual querremos conectar.
@@ -123,6 +126,19 @@ def conectar(host=HOST, user=USER, passwd=PASSWORD, db=DB, port=PORT):
         logger.error("Erro na conexão com o Banco de Dados", exc_info=True)
         return None
 
+def iniciaConfig():
+    Config = ''
+    
+    try:
+        Config = ConfigParser.ConfigParser()
+        Config.read(CAMINHO + '/' + ARQUIVO_CONFIG)
+        
+    except:
+        logger.error("Não foi possível encontrar o arquivo de configuração.", exc_info=True)
+        
+    finally:
+        return Config
+
 def iniciaLogger():
     ''' Inicia as opções para o logger.
         Reunidas aqui para organização.
@@ -140,7 +156,7 @@ def iniciaLogger():
     logger.addHandler(handler)
 
     # Cria um logger para arquivo
-    handler = logging.FileHandler(CAMINHO + '/' + 'registro.log')
+    handler = logging.FileHandler(CAMINHO + '/' + ARQUIVO_LOGGER)
     handler.setLevel(logging.INFO)
     formatter = logging.Formatter( '%(asctime)s %(name)-12s %(levelname)-8s %(message)s' )
     handler.setFormatter(formatter)
@@ -149,4 +165,5 @@ def iniciaLogger():
 
     return logger
 
+config = iniciaConfig()
 logger = iniciaLogger()

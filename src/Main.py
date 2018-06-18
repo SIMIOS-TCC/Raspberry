@@ -63,12 +63,4 @@ def iniciaLogger():
 
 logger = iniciaLogger()
 
-#QueriesMYSQL.criar("teste", colunasExemplo)
-
 Main()
-
-#QueriesMYSQL.ler("teste", colunasInserir)
-
-#raw_input("Pressione ENTER para deletar")
-
-#QueriesMYSQL.deletar("teste")
