@@ -5,8 +5,8 @@ import QueriesMYSQL
 import logging
 CAMINHO = 'arquivos/'
 
-colunasExemplo = [["ID", "INT NOT NULL AUTO_INCREMENT"], ["timestamp", "INT NOT NULL"], ["ID1", "INT NOT NULL"], ["distancia1", "INT NOT NULL"]]
-colunasInserir = ["ID", "timestamp", "ID1", "distancia1"]
+#colunasExemplo = [["simio_id1", "INT NOT NULL AUTO_INCREMENT"], ["ID1", "INT NOT NULL"], ["distancia1", "INT NOT NULL"]]
+colunasInserir = ["simio_id1", "simio_id2", "distance"]
 
 def Main():
     dados = Arquivos.pegaDados()
@@ -17,8 +17,7 @@ def Main():
     #Manda queries com os dados tratados
     for leitura in dados:
         for distancia in leitura.distancias:
-            QueriesMYSQL.inserir("teste", colunasInserir, [[leitura.ID, leitura.timestamp, distancia.ID, distancia.valor]])
-            logger.debug("Emitindo insert: leitura: %s com distancias: &s \n", leitura, distancia)
+            QueriesMYSQL.inserir("simio_distance", colunasInserir, [[leitura.ID, distancia.ID, distancia.valor]])
 
 def checaInt(string):
     '''Checa se um string representa um inteiro
@@ -64,12 +63,12 @@ def iniciaLogger():
 
 logger = iniciaLogger()
 
-QueriesMYSQL.criar("teste", colunasExemplo)
+#QueriesMYSQL.criar("teste", colunasExemplo)
 
 Main()
 
-QueriesMYSQL.ler("teste", colunasInserir)
+#QueriesMYSQL.ler("teste", colunasInserir)
 
-raw_input("Pressione ENTER para deletar")
+#raw_input("Pressione ENTER para deletar")
 
-QueriesMYSQL.deletar("teste")
+#QueriesMYSQL.deletar("teste")

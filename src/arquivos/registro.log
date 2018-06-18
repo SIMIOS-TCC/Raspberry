@@ -1,0 +1,39 @@
+2018-06-17 23:20:54,639 Arquivos     INFO     Acesso ao arquivo: dados.txt 
+2018-06-17 23:20:55,105 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 119, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '10.145.250.140' (101)")
+2018-06-17 23:20:55,468 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 119, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '10.145.250.140' (101)")
+2018-06-17 23:22:10,659 Arquivos     INFO     Acesso ao arquivo: dados.txt 
+2018-06-17 23:22:20,325 QueriesMYSQL ERROR    Erro na execução da Query: INSERT INTO `simios_db`.`teste` (simio_id1,simio_id2,distance)VALUES ("12","34","456789"); 
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 95, in executar
+    cursor.execute(query)                               #Tenta executar a query passada
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
+2018-06-17 23:22:20,947 QueriesMYSQL ERROR    Erro na execução da Query: INSERT INTO `simios_db`.`teste` (simio_id1,simio_id2,distance)VALUES ("45","67","987654"); 
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 95, in executar
+    cursor.execute(query)                               #Tenta executar a query passada
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
+2018-06-17 23:23:54,191 Arquivos     INFO     Acesso ao arquivo: dados.txt 
