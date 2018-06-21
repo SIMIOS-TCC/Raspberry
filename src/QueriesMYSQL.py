@@ -7,6 +7,8 @@ CAMINHO = 'arquivos/'
 ARQUIVO_LOGGER = 'registro.log'
 ARQUIVO_CONFIG = 'config.ini'
 
+SECAO_CONFIG = 'ConfiguracaoConexao'
+
 #Valores default
 HOST = "192.168.0.8"
 USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
@@ -56,7 +58,7 @@ def inserir(tabela, colunas=[], valores=[]):
         query += '"' + valor + '"' + ","                        #   inseridos, que precisam acabar com ");".
     query += '"' + valores[-1][-1] + '"' + ");"
     
-    executar(query)
+    return(executar(query))
 
 def ler(tabela, colunas) :
     ''' Funcao para ler valores de uma tabela dentro do banco de dados conectado.
@@ -88,6 +90,8 @@ def executar(query):
         pegos aqui. Os erros de conexao sao tratados na funcao conexao. '''
     
     conexao = conectar()                                        #Realiza a conexao ao banco de dados. Retona None se falhou.
+
+    status = False
     
     if conexao is not None:                                     #Caso a conexao tenha sido um sucesso...
         cursor = conexao.cursor()                               #Inicializa o cursor do banco
@@ -101,17 +105,24 @@ def executar(query):
             for linha in cursor.fetchall():                     #Caso haja informacao que o cursor foi buscar
                 print (linha)                                   #   inprime ela na tela.
                 
-            logger.debug("Tudo OK")       #Para fins de debug
+            logger.debug("Tudo OK")                             #Para fins de debug.
+            
+            status = True
             
         except MySQLdb.Error, erro:                             #Caso haja algum problema com a execucao
             logger.error("Erro na execução da Query: %s ", query, exc_info=True)
             conexao.rollback()                                  #   desfazemos-la e verificamos o erro.
             
+            status = False
+            
         finally:
             cursor.close()                                      # Importante sempre fechar a conexao e o cursor
             conexao.close()                                     #   ao finalizar uma transacao.
+            
     else:
-        pass
+        status = False
+
+    return status
 
 def conectar(host=HOST, user=USER, passwd=PASSWORD, db=DB, port=PORT):
     ''' Funcao para se conectar ao banco de dados.
@@ -128,16 +139,46 @@ def conectar(host=HOST, user=USER, passwd=PASSWORD, db=DB, port=PORT):
 
 def iniciaConfig():
     Config = ''
+
+    status = False
     
     try:
         Config = ConfigParser.ConfigParser()
         Config.read(CAMINHO + '/' + ARQUIVO_CONFIG)
+
+        mapaConfig = mapearConfiguracao(Config, SECAO_CONFIG)
+
+        if mapaConfig:
+            HOST =      mapaConfig['HOST']
+            USER =      mapaConfig['USER']     # Usuario do banco de dados cadastrado para um certo IP local.
+            PASSWORD =  mapaConfig['PASSWORD'] # Senha deste mesmo usuario cadastrado.
+            DB =        mapaConfig['DB']       # Banco de dados ao qual querremos conectar.
+            PORT =      mapaConfig['PORT']     # Porta TCP (valor default: 3306).
+            
+        else:
+            pass #Os valores default serão usados.
+            
+        status = True
         
     except:
         logger.error("Não foi possível encontrar o arquivo de configuração.", exc_info=True)
+        status = False
         
     finally:
-        return Config
+        return (status)
+
+def mapearConfiguracao(Config, secao):
+    dict1 = {}
+    opcoes = Config.options(secao)
+    for opcao in opcoes:
+        try:
+            dict1[opcao] = Config.get(section, opcao)
+            if dict1[opcao] == -1:
+                logger.debug("Opção pulada: %s", opcao)
+        except:
+            logger.error("Não foi possível atribuir as opçoes de configuração.", exc_info=True)
+            dict1[option] = None
+    return dict1
 
 def iniciaLogger():
     ''' Inicia as opções para o logger.

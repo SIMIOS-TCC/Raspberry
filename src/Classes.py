@@ -8,12 +8,8 @@ class Leitura:
         self.ID = ID
         self.timestamp = timestamp
 
-        self.distancias = []
-
     def adicionarDistancia(self, ID, valor):
-        distancia = Distancia(ID, valor)
-
-        self.distancias.append(distancia)
+        self.distancia = Distancia(ID, valor)
 
 class Distancia:
 

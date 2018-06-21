@@ -9,15 +9,24 @@ CAMINHO = 'arquivos/'
 colunasInserir = ["simio_id1", "simio_id2", "distance"]
 
 def Main():
-    dados = Arquivos.pegaDados()
+    Arquivos.colheDados() #Para pegar todas as novas leituras.
 
-    #Trata os dados antes de mandar.
-    #EX: timestamp e distância...
-    
-    #Manda queries com os dados tratados
-    for leitura in dados:
-        for distancia in leitura.distancias:
-            QueriesMYSQL.inserir("simio_distance", colunasInserir, [[leitura.ID, distancia.ID, distancia.valor]])
+    leitura = Arquivos.pegaLeitura()
+
+    while leitura:
+        distancia = leitura.distancia
+
+        if checaCampos(leitura):
+            
+            if QueriesMYSQL.inserir("simio_distance", colunasInserir, [[leitura.ID, distancia.ID, distancia.valor]]):
+                pass
+        
+            else:
+                linha = leitura.ID +';'+ leitura.timestamp +';'+ distancia.ID +';'+ distancia.valor + '\n'
+                Arquivos.escreveArquivo(linha, Arquivs.ARQUIVOS_TEMP)
+
+        else:
+            logger.Warning("Campos com valores inválidos: %s, %s, %s .", (leitura.ID, distancia.ID, distancia.valor))
 
 def checaInt(string):
     '''Checa se um string representa um inteiro
@@ -34,6 +43,14 @@ def checaFloat(string):
     try:    decimal = float(string)
     except: return False
     return  True
+
+def checaCampos(leitura):
+
+    if checaInt(leitura.ID) and checaInt(leitura.distancia.ID) and checaFloat(leitura.distancia.valor):
+        return True
+    
+    else:
+        return False
 
 def iniciaLogger():
     ''' Inicia as opções para o logger.

@@ -37,3 +37,8 @@ Traceback (most recent call last):
     raise errorclass, errorvalue
 ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
 2018-06-17 23:23:54,191 Arquivos     INFO     Acesso ao arquivo: dados.txt 
+2018-06-21 16:55:40,016 __main__     INFO     Acesso ao arquivo: dados.txt 
+2018-06-21 16:56:10,637 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-06-21 16:56:21,577 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-06-21 17:14:31,046 Arquivos     INFO     Acesso ao arquivo: dados.txt 
+2018-06-21 17:14:31,073 Arquivos     INFO     Acesso ao arquivo: temp.txt 

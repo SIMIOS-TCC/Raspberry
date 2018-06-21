@@ -1,47 +1,68 @@
 # -*- coding: utf-8 -*-
+
 import logging
 from Classes import *
 
 CAMINHO = "arquivos"
 ARQUIVO_DADOS = "dados.txt"
+ARQUIVO_TEMP = "temp.txt"
 ARQUIVO_BACKUP = "backup.txt"
 
-def pegaDados():
-    ''' Pega os dados do arquivo de dados especificado
-        e retorna uma Leitura dos dados.
-        Alem disso, faz um backup e limpa o arquivo de dados.'''
+def pegaLeitura(arquivo = ARQUIVO_TEMP):
+    ''' Pega a primeira linha do arquivo especificado
+        e a retorna como uma leitura, retirando ela do arquivo.'''
 
-    info = [] #Guardara as informações a serem passadas como dados.
+    leituras = abreArquivo(ARQUIVO_TEMP)#O arquivo é trazido todo para memória, espero que isso não seja um problema.
+    
+    if leituras:
+        leituras = leituras.splitlines() #Separa cada linha do arquivo lido em leituras diversas.
+        leitura = leituras.pop(0)
+        logger.debug("Passando a leitura: %s ", leitura)
+        limpaArquivo(ARQUIVO_TEMP)
+
+        for linha in leituras:
+            escreveArquivo(linha, ARQUIVO_TEMP)
+
+        leitura = leitura.split(";")    #Separa cada unidade de informação da linha lida.
+        ID = leitura.pop(0)             #A primeira informação é o ID de quem registrou as distâncias.
+        timestamp = leitura.pop(0)      #A segunda é o timestamp de quando foi feito o registro.
+        ID_distancia = leitura.pop(0)
+        valor_distancia = leitura.pop(0)
+
+        leitura = Leitura(ID, timestamp)
+        leitura.adicionarDistancia(ID_distancia, valor_distancia)
+        
+    else:
+        logger.debug("Sem leituras para pegar")
+        leitura = None
+    
+    return leitura
+
+def colheDados():
+    ''' Colhe as leituras do arquivo de dados
+        e as coloca no arquivo temporário.
+        Separa as informações em leituras diferentes,
+        para que cada linha do temp seja um query'''
     
     dados = abreArquivo(ARQUIVO_DADOS)
-    logger.debug("Pegando dados: %s \n", dados)
-    
+    limpaArquivo(ARQUIVO_DADOS)
+
     if dados:
-        
-        backup(dados)
-        limpaArquivo(ARQUIVO_DADOS)
-        
+        logger.debug("Colhendo dados: %s \n", dados)
+
         dados = dados.splitlines() #Separa cada linha do arquivo lido em leituras diversas.
         for dado in dados:
             dado = dado.split(";")  #Separa cada unidade de informação da linha lida.
             ID = dado.pop(0)        #A primeira informação é o ID de quem registrou as distâncias.
             timestamp = dado.pop(0) #A segunda é o timestamp de quando foi feito o registro.
-            
-            leitura = Leitura(ID, timestamp)
 
             for item in range(len(dado)//2):
-                leitura.adicionarDistancia(dado.pop(0), dado.pop(0))
-
-            info.append(leitura)
-            
-        logger.debug("Passando os dados: %s ", info)
-        return info
-    
+                linha = ID +';'+ timestamp +';'+ dado.pop(0) +';'+ dado.pop(0) + '\n'
+                escreveArquivo(linha, ARQUIVO_TEMP) #Cada linha do arquivo temp contém os dados de uma query.
     else:
-        logger.debug("Passando os dados: %s ", info)
-        return info
+        logger.debug("Sem dados para colher")
     
-def abreArquivo(arquivo):
+def abreArquivo(arquivo = ARQUIVO_DADOS):
     ''' Abre o arquivo especificado e retorna seu conteúdo.
         Caso o arquivo não exista, um arquivo vazio é criado
         e uma string vazia é retornada. '''
@@ -60,17 +81,17 @@ def abreArquivo(arquivo):
     finally:
         return dados
 
-def backup(dados):
-    ''' Abre o arquivo de backup e coloca ao final dele "dados".
+def escreveArquivo(dados, arquivo = ARQUIVO_TEMP):
+    ''' Abre o arquivo especificado e coloca ao final dele "dados".
         Caso o arquivo não exista, um arquivo vazio é criado
         e dados são salvos nele. '''
 
     try:
-        with open(CAMINHO + '/' + ARQUIVO_BACKUP, 'a') as arquivoBackup:
-            arquivoBackup.write(dados)
-        logger.debug("Relizando backup")
+        with open(CAMINHO + '/' + arquivo, 'a') as escrita:
+            escrita.write(dados)
+        logger.debug("Relizando escrita de : %s", dados)
     except:
-        logger.error("Falha ao abrir o arquivo de Backup", exc_info=True)
+        logger.error("Falha ao abrir o arquivo para escrita", exc_info=True)
 
 def limpaArquivo(arquivo):
     try:
