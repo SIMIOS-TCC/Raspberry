@@ -21,7 +21,7 @@ def pegaLeitura(arquivo = ARQUIVO_TEMP):
         limpaArquivo(ARQUIVO_TEMP)
 
         for linha in leituras:
-            escreveArquivo(linha, ARQUIVO_TEMP)
+            escreveArquivo(linha + '\n', ARQUIVO_TEMP)
 
         leitura = leitura.split(";")    #Separa cada unidade de informação da linha lida.
         ID = leitura.pop(0)             #A primeira informação é o ID de quem registrou as distâncias.

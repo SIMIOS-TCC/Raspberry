@@ -5,8 +5,8 @@ import QueriesMYSQL
 import logging
 CAMINHO = 'arquivos/'
 
-#colunasExemplo = [["simio_id1", "INT NOT NULL AUTO_INCREMENT"], ["ID1", "INT NOT NULL"], ["distancia1", "INT NOT NULL"]]
-colunasInserir = ["simio_id1", "simio_id2", "distance"]
+DB_INSERIR = "simio_distance"
+COLUNAS_INSERIR = ["simio_id1", "simio_id2", "distance"]
 
 def Main():
     Arquivos.colheDados() #Para pegar todas as novas leituras.
@@ -17,16 +17,19 @@ def Main():
         distancia = leitura.distancia
 
         if checaCampos(leitura):
-            
-            if QueriesMYSQL.inserir("simio_distance", colunasInserir, [[leitura.ID, distancia.ID, distancia.valor]]):
-                pass
+
+            linha = leitura.ID +';'+ leitura.timestamp +';'+ distancia.ID +';'+ distancia.valor + '\n'
+
+            if QueriesMYSQL.inserir(DB_INSERIR, COLUNAS_INSERIR, [[leitura.ID, distancia.ID, distancia.valor]]):
+                Arquivos.escreveArquivo(linha, Arquivos.ARQUIVO_BACKUP) #Salva a linha atual para a posteridade
         
             else:
-                linha = leitura.ID +';'+ leitura.timestamp +';'+ distancia.ID +';'+ distancia.valor + '\n'
-                Arquivos.escreveArquivo(linha, Arquivs.ARQUIVOS_TEMP)
+                Arquivos.escreveArquivo(linha, Arquivos.ARQUIVO_TEMP)
 
         else:
             logger.Warning("Campos com valores inválidos: %s, %s, %s .", (leitura.ID, distancia.ID, distancia.valor))
+
+        leitura = Arquivos.pegaLeitura()
 
 def checaInt(string):
     '''Checa se um string representa um inteiro
