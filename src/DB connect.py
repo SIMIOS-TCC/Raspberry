@@ -6,7 +6,7 @@ HOST = "2804:14d:8e84:871::2"
 USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
 DB = "simios_db"                # Banco de dados ao qual querremos conectar.
-PORT = 3306                     # Porta TCP (valor default: 3306)
+PORT = 3306                     # Porta TCP (valor default: 3306).
 
 # Variaveis para testar as conexoes
 colunasExemplo = [["ID", "INT NOT NULL AUTO_INCREMENT"], ["nome", "VARCHAR(255) NULL"], ["sobrenome", "VARCHAR(255) NULL"]]

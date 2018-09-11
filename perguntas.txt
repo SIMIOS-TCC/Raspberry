@@ -1,0 +1,24 @@
+Pergunta 1: O que é WiringPi? Como configurar?
+
+Resposta: É uma biblioteca com funções implementadas de leitura e escrita de GPIO no Raspberry Pi. Baixar o repositório git (https://github.com/WiringPi/WiringPi, o link do livro não funciona). Para utilizá-la, não é preciso nenhuma configuração específica, basta montá-la ("./build" no bash).
+
+Pergunta 2: Como configurar um pino para entrada ou saída no terminal e no código fonte?
+
+Resposta: No terminal, utlizar o comando "gpio mode (wPi) out", onde wPi é um parâmetro da tabela consultada com o comando "gpio readall" no bash, e corresponde a um pino.
+
+No código fonte em cpp, colocar os seguintes comandos:
+
+wiringPiSetupGpio();
+pinMode(BCM,OUTPUT);
+pinMode(BCM,INPUT);
+
+onde BCM é o número do pino na placa do Raspberry Pi. 
+
+Pergunta 3: Quais os comandos para escrever e ler um pino no terminal e no código fonte?
+
+Resposta: No terminal, é "gpio read (wPi)" e "gpio write (wPi) 1" ou "gpio write (wPi) 0" (1 - sinal em alto, 0 sinal em baixo). 
+
+No código fonte, para ler é "digitalRead(BCM)" e para escrever é "digitalWrite(BCM,(valor))".
+
+
+
