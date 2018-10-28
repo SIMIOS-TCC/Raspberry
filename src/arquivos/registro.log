@@ -42,3 +42,16 @@ ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
 2018-06-21 16:56:21,577 __main__     INFO     Acesso ao arquivo: temp.txt 
 2018-06-21 17:14:31,046 Arquivos     INFO     Acesso ao arquivo: dados.txt 
 2018-06-21 17:14:31,073 Arquivos     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:10:59,919 __main__     INFO     Acesso ao arquivo: dados.txt 
+2018-10-28 16:11:15,416 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:12:05,623 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:12:34,748 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:12:41,025 __main__     INFO     Acesso ao arquivo: dados.txt 
+2018-10-28 16:13:00,748 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:13:47,005 __main__     INFO     Acesso ao arquivo: dados.txt 
+2018-10-28 16:15:04,687 __main__     INFO     Acesso ao arquivo: dados.txt 
+2018-10-28 16:15:15,810 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:17:21,671 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:18:32,012 __main__     INFO     Acesso ao arquivo: dados.txt 
+2018-10-28 16:18:42,181 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-10-28 16:19:39,874 __main__     INFO     Acesso ao arquivo: temp.txt 

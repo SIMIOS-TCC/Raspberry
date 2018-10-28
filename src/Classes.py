@@ -1,15 +1,18 @@
 class Leitura:
-    
-    contagem = 0
-    
-    def __init__(self, ID, timestamp):
-        Leitura.contagem += 1
-        
-        self.ID = ID
-        self.timestamp = timestamp
 
-    def adicionarDistancia(self, ID, valor):
-        self.distancia = Distancia(ID, valor)
+    contagem = 0
+
+    def __init__(self, timestamp, ap_id, simio_id, distance):
+        Leitura.contagem += 1
+
+        self.timestamp = timestamp
+        self.ap_id = ap_id
+        self.simio_id = simio_id
+        self.distance = distance
+
+    def __str__(self):
+        return self.timestamp + ";" + self.ap_id + ";" + self.simio_id + ";" + self.distance + ";"
+
 
 class Distancia:
 
@@ -20,4 +23,3 @@ class Distancia:
 
         self.ID = ID
         self.valor = valor
-        

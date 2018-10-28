@@ -1,2 +1,3 @@
-12;123456;34;456789
-45;234567;67;987654
+timestamp1;ap_id1;simio_id1;distance1;
+timestamp2;ap_id2;simio_id2;distance2;
+timestamp3;ap_id3;simio_id3;distance3;
