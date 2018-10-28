@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import MySQLdb
 import ConfigParser
 import logging
@@ -9,10 +10,9 @@ ARQUIVO_CONFIG = 'config.ini'
 
 SECAO_CONFIG = 'ConfiguracaoConexao'
 
-# Valores default
-HOST = "192.168.0.8"
-# Usuario do banco de dados cadastrado para um certo IP local.
-USER = "user"
+#Valores default
+HOST = "169.254.163.8"
+USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
 DB = "simios_db"                # Banco de dados ao qual querremos conectar.
 PORT = 3306                     # Porta TCP (valor default: 3306)

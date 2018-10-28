@@ -1,24 +1,138 @@
-2018-06-17 23:20:54,639 Arquivos     INFO     Acesso ao arquivo: dados.txt 
-2018-06-17 23:20:55,105 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+2018-06-24 21:34:44,209 Arquivos     INFO     Acesso ao arquivo: dados.txt 
+2018-06-24 21:34:44,600 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:34:45,319 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
 Traceback (most recent call last):
-  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 119, in conectar
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
     conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
   File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
     return Connection(*args, **kwargs)
   File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
     super(Connection, self).__init__(*args, **kwargs2)
-OperationalError: (2003, "Can't connect to MySQL server on '10.145.250.140' (101)")
-2018-06-17 23:20:55,468 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:34:45,468 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:34:45,887 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
 Traceback (most recent call last):
-  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 119, in conectar
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
     conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
   File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
     return Connection(*args, **kwargs)
   File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
     super(Connection, self).__init__(*args, **kwargs2)
-OperationalError: (2003, "Can't connect to MySQL server on '10.145.250.140' (101)")
-2018-06-17 23:22:10,659 Arquivos     INFO     Acesso ao arquivo: dados.txt 
-2018-06-17 23:22:20,325 QueriesMYSQL ERROR    Erro na execução da Query: INSERT INTO `simios_db`.`teste` (simio_id1,simio_id2,distance)VALUES ("12","34","456789"); 
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:34:46,017 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:34:46,590 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:34:46,775 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:34:47,195 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:34:47,326 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:34:47,965 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:34:48,094 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:13,545 Arquivos     INFO     Acesso ao arquivo: dados.txt
+2018-06-24 21:36:13,677 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:14,199 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:14,337 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:14,629 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:14,867 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:15,286 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:15,442 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:15,881 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:16,126 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:16,555 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:16,688 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:17,090 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:17,329 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:17,776 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:17,904 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:18,314 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 134, in conectar
+    conexao = MySQLdb.connect(host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.0.8' (101)")
+2018-06-24 21:36:18,526 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-06-24 21:36:18,901 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
 Traceback (most recent call last):
   File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 95, in executar
     cursor.execute(query)                               #Tenta executar a query passada
@@ -27,31 +141,22 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
     raise errorclass, errorvalue
 ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
-2018-06-17 23:22:20,947 QueriesMYSQL ERROR    Erro na execução da Query: INSERT INTO `simios_db`.`teste` (simio_id1,simio_id2,distance)VALUES ("45","67","987654"); 
-Traceback (most recent call last):
-  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 95, in executar
-    cursor.execute(query)                               #Tenta executar a query passada
-  File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 174, in execute
-    self.errorhandler(self, exc, value)
-  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
-    raise errorclass, errorvalue
-ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
-2018-06-17 23:23:54,191 Arquivos     INFO     Acesso ao arquivo: dados.txt 
-2018-06-21 16:55:40,016 __main__     INFO     Acesso ao arquivo: dados.txt 
-2018-06-21 16:56:10,637 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-06-21 16:56:21,577 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-06-21 17:14:31,046 Arquivos     INFO     Acesso ao arquivo: dados.txt 
-2018-06-21 17:14:31,073 Arquivos     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:10:59,919 __main__     INFO     Acesso ao arquivo: dados.txt 
-2018-10-28 16:11:15,416 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:12:05,623 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:12:34,748 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:12:41,025 __main__     INFO     Acesso ao arquivo: dados.txt 
-2018-10-28 16:13:00,748 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:13:47,005 __main__     INFO     Acesso ao arquivo: dados.txt 
-2018-10-28 16:15:04,687 __main__     INFO     Acesso ao arquivo: dados.txt 
-2018-10-28 16:15:15,810 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:17:21,671 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:18:32,012 __main__     INFO     Acesso ao arquivo: dados.txt 
-2018-10-28 16:18:42,181 __main__     INFO     Acesso ao arquivo: temp.txt 
-2018-10-28 16:19:39,874 __main__     INFO     Acesso ao arquivo: temp.txt 
+2018-06-17 23:23:54,191 Arquivos     INFO     Acesso ao arquivo: dados.txt
+2018-06-21 16:55:40,016 __main__     INFO     Acesso ao arquivo: dados.txt
+2018-06-21 16:56:10,637 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-06-21 16:56:21,577 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-06-21 17:14:31,046 Arquivos     INFO     Acesso ao arquivo: dados.txt
+2018-06-21 17:14:31,073 Arquivos     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:10:59,919 __main__     INFO     Acesso ao arquivo: dados.txt
+2018-10-28 16:11:15,416 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:12:05,623 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:12:34,748 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:12:41,025 __main__     INFO     Acesso ao arquivo: dados.txt
+2018-10-28 16:13:00,748 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:13:47,005 __main__     INFO     Acesso ao arquivo: dados.txt
+2018-10-28 16:15:04,687 __main__     INFO     Acesso ao arquivo: dados.txt
+2018-10-28 16:15:15,810 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:17:21,671 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:18:32,012 __main__     INFO     Acesso ao arquivo: dados.txt
+2018-10-28 16:18:42,181 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-10-28 16:19:39,874 __main__     INFO     Acesso ao arquivo: temp.txt

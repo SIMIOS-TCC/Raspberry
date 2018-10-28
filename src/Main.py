@@ -5,8 +5,8 @@ import QueriesMYSQL
 import logging
 CAMINHO = 'arquivos/'
 
-#colunasExemplo = [["simio_id1", "INT NOT NULL AUTO_INCREMENT"], ["ID1", "INT NOT NULL"], ["distancia1", "INT NOT NULL"]]
-colunasInserir = ["simio_id1", "simio_id2", "distance"]
+DB_INSERIR = "simio_distance"
+COLUNAS_INSERIR = ["simio_id1", "simio_id2", "distance"]
 
 
 def Main():
@@ -27,6 +27,8 @@ def Main():
 
         else:
             logger.Warning("Campos com valores inválidos: ", leitura)
+
+        leitura = Arquivos.pegaLeitura()
 
 
 def checaInt(string):
