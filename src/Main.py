@@ -2,33 +2,82 @@
 
 import Arquivos
 import QueriesMYSQL
-import logging
-CAMINHO = 'arquivos/'
+import ConexaoSerial
+from Classes import *
 
+import logging
+
+CAMINHO = 'arquivos/'
 DB_INSERIR = "simio_distance"
 COLUNAS_INSERIR = ["simio_id1", "simio_id2", "distance"]
 
+SEPARADOR_VALORES_LIDOS = ";"
+
+leiturasIncompletas = []
+
 
 def Main():
-    Arquivos.colheDados()  # Para pegar todas as novas leituras.
 
-    leitura = Arquivos.pegaLeitura()
+    logger.debug("Tentando se conectar com o port serial...")
+    portSerial = ConexaoSerial.abrePort()
 
-    while leitura:
+    if (portSerial == False):
+        logger.warning("Houve um erro ao abrir o port serial.")
 
-        if checaCampos(leitura):
+    else:
+        logger.debug("Conectado com o port serial")
+        loopLeitura(portSerial)
 
-            if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.timestamp):
-                pass
 
-            else:
-                Arquivos.escreveArquivo(
-                    str(leitura) + '\n', Arquivs.ARQUIVOS_TEMP)
+def loopLeitura(portSerial):
+    """ Executa o loop de coleta de leitura e seu subsequente processamento."""
+
+    while True:
+        mensagem = ConexaoSerial.lerLinhaSeparada(portSerial)
+
+        if mensagem:
+            logger.debug("Próxima leitura a ser processada: ", str(mensagem))
+            leitura = instanciaLeitura(mensagem)
+        elif leiturasIncompletas:
+            leitura = leiturasIncompletas.pop(0)
+        else:
+            leitura = None
+
+        processaLeitura(leitura)
+
+
+def instanciaLeitura(mensagem):
+    # Separa cada unidade de informação da linha lida.
+    mensagem = mensagem.split(SEPARADOR_VALORES_LIDOS)
+
+    try:
+        timestamp = mensagem.pop(0)
+        ap_id = mensagem.pop(0)
+        simio_id = mensagem.pop(0)
+        distance = mensagem.pop(0)
+
+        leitura = Leitura(timestamp, ap_id, simio_id, distance)
+    except:
+        logger.warning("Leitura mal formatada.")
+        leitura = None
+
+    return leitura
+
+
+def processaLeitura(leitura):
+    if leitura and checaCampos(leitura):
+
+         if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.timestamp):
+            logger.debug("Passando leitura para BD ", str(leitura))
 
         else:
-            logger.Warning("Campos com valores inválidos: ", leitura)
+            Arquivos.escreveArquivo(
+                str(leitura) + '\n', Arquivos.ARQUIVOS_TEMP)
+            leiturasIncompletas.push(leitura)
 
-        leitura = Arquivos.pegaLeitura()
+    else:
+        logger.warning(
+            "Campos com valores inválidos ou leitura inválida: ", str(leitura))
 
 
 def checaInt(string):

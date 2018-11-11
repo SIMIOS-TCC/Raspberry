@@ -160,3 +160,4 @@ ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
 2018-10-28 16:18:32,012 __main__     INFO     Acesso ao arquivo: dados.txt
 2018-10-28 16:18:42,181 __main__     INFO     Acesso ao arquivo: temp.txt
 2018-10-28 16:19:39,874 __main__     INFO     Acesso ao arquivo: temp.txt
+2018-11-11 19:03:15,036 __main__     WARNING  Leitura mal formatada.
