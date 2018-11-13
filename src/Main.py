@@ -22,7 +22,7 @@ def Main():
     portSerial = ConexaoSerial.abrePort()
 
     if (portSerial == False):
-        logger.warning("Houve um erro ao abrir o port serial.")
+        logger.debug("Houve um erro ao abrir o port serial.")
 
     else:
         logger.debug("Conectado com o port serial")
@@ -34,50 +34,78 @@ def loopLeitura(portSerial):
 
     while True:
         mensagem = ConexaoSerial.lerLinhaSeparada(portSerial)
+        logger.debug("Próxima leitura a ser processada: %s" %str(mensagem))
 
         if mensagem:
-            logger.debug("Próxima leitura a ser processada: ", str(mensagem))
-            leitura = instanciaLeitura(mensagem)
+            logger.debug("Próxima leitura a ser processada: %s" %str(mensagem))
+            leitura = instanciaLeitura(mensagem, portSerial)
         elif leiturasIncompletas:
             leitura = leiturasIncompletas.pop(0)
         else:
             leitura = None
+            logger.debug("Nenhuma mensagem recebida...")
 
         processaLeitura(leitura)
 
 
-def instanciaLeitura(mensagem):
+def instanciaLeitura(mensagem, portSerial):
     # Separa cada unidade de informação da linha lida.
     mensagem = mensagem.split(SEPARADOR_VALORES_LIDOS)
+    if mensagem[-1] == "\x00":
+        mensagem.pop()
 
-    try:
-        timestamp = mensagem.pop(0)
+    if (checaMensagem(mensagem)):
+        ConexaoSerial.enviaACK(portSerial, True)
+        
         ap_id = mensagem.pop(0)
         simio_id = mensagem.pop(0)
         distance = mensagem.pop(0)
+        timestamp = mensagem.pop(0)
 
         leitura = Leitura(timestamp, ap_id, simio_id, distance)
-    except:
+        
+    else:
+        ConexaoSerial.enviaACK(portSerial, False)
+        
         logger.warning("Leitura mal formatada.")
         leitura = None
 
     return leitura
 
+def checaMensagem(mensagem):
+    """ Formato da mensagem: [idAP,idSimio1,dist1,timestamp1,idSimios2,dist2,timestamp2,...]
+        idAp: 2caracteres
+        idSimio: 2char
+        dist: 5char
+        timestamp: 8char"""
+
+    if len(mensagem) < 4:
+        logger.warning("Mensagem muito curta: %s" %str(mensagem))
+        return False
+
+    elif (len(mensagem)-1)%3 != 0:
+        logger.warning("Faltam campos na mensagem: %s" %str(mensagem))
+        return False
+
+    else:
+        logger.debug("mensagem bem formatada e aceita!")
+        return True
+
 
 def processaLeitura(leitura):
     if leitura and checaCampos(leitura):
 
-         if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.timestamp):
-            logger.debug("Passando leitura para BD ", str(leitura))
+        if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.timestamp):
+            logger.debug("Passando leitura para BD %s" %str(leitura))
 
         else:
             Arquivos.escreveArquivo(
-                str(leitura) + '\n', Arquivos.ARQUIVOS_TEMP)
+                str(leitura) + '\n', Arquivos.ARQUIVO_TEMP)
             leiturasIncompletas.push(leitura)
 
     else:
         logger.warning(
-            "Campos com valores inválidos ou leitura inválida: ", str(leitura))
+            "Campos com valores inválidos ou leitura inválida: %s" %str(leitura))
 
 
 def checaInt(string):

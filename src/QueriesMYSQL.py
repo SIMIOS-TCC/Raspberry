@@ -21,6 +21,7 @@ SIMIO_DISTANCE = "simio_distance"
 AP_ID = "ap_id"
 SIMIO_ID = "simio_id"
 DISTANCE = "distance"
+TIMESTAMP = "timestamp"
 
 
 def criar(tabela, colunas=[]):
