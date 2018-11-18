@@ -25,6 +25,9 @@ def Main():
 
     while portSerial == False:
         portSerial = ConexaoSerial.abrePort()
+        # Considerar enviar um ack quando falha:
+        #ConexaoSerial.enviaACK(portSerial, False)
+    ConexaoSerial.enviaACK(portSerial, True)
 
     # Quando uma conexão for estabelecida:
     loopLeitura(portSerial)
@@ -64,8 +67,6 @@ def instanciaLeitura(mensagem, portSerial):
         mensagem.remove("\x00")
 
     if (checaMensagem(mensagem)):
-        ConexaoSerial.enviaACK(portSerial, True)
-
         ap_id = mensagem.pop(0)
         for _ in range(len(mensagem)//3):
             simio_id = mensagem.pop(0)
@@ -81,8 +82,6 @@ def instanciaLeitura(mensagem, portSerial):
                               rssi=rssi, dateTime=dateTime)
 
     else:
-        ConexaoSerial.enviaACK(portSerial, False)
-
         logger.warning("Leitura mal formatada.")
         leitura = None
 
