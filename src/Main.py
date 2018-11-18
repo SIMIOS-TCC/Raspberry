@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import Arquivos
-#import QueriesMYSQL
+import QueriesMYSQL
 import ConexaoSerial
 from Classes import *
 
@@ -176,7 +176,7 @@ def isFloat(string):
 
 
 def timestampCorrigido(deltaTimestamp):
-
+    # Correção para o tempo global:
     timestampRaspberry = time.time()
 
     timestamp_Corrigido = timestampRaspberry - deltaTimestamp
@@ -187,8 +187,7 @@ def timestampCorrigido(deltaTimestamp):
 def processaLeitura(leitura):
     if leitura:
 
-        # if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.dateTime):
-        if True:
+        if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.dateTime):
             logger.debug("Passando leitura para BD %s" % str(leitura))
 
         else:

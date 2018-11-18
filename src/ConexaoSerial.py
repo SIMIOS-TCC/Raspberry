@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from Classes import PortTest
-#import serial
+import serial
 
 SEPARADORES = ["."]
 
@@ -20,9 +20,9 @@ def abrePort():
     logger.info("\t E Timeout: %s" % str(TIMEOUT))
 
     try:
-        port = PortTest()
-        # port = serial.Serial(port=SERIAL_DIRECTORY,
-        #                     baudrate=BAUDRATE, timeout=TIMEOUT)
+        #port = PortTest()
+        port = serial.Serial(port=SERIAL_DIRECTORY,
+                             baudrate=BAUDRATE, timeout=TIMEOUT)
         logger.debug("Sucesso na conexao com o port")
         return port
     except(exception):
