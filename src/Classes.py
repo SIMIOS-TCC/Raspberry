@@ -33,7 +33,7 @@ class PortTest:
     """ Classe para testar a porta serial sem Conexao Serial"""
 
     posicao = -1
-    mensagem = "13;12;12.45;12345678>34;12;12.45;12345678;34;67.90;90123456>"
+    mensagem = "13;12345678;12;12.45;12345678>34;12345678;12;12.45;12345678;34;67.90;90123456>"
 
     resultados = []
 
