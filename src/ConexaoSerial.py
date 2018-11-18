@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from Classes import PortTest
-import serial
+#import serial
 
-# Separador não pode ser '.', para podermos ter a distância em float.
-SEPARADORES = [">"]
+SEPARADORES = ["."]
 
 SERIAL_DIRECTORY = "/dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00"
 BAUDRATE = 115200
@@ -21,9 +20,9 @@ def abrePort():
     logger.info("\t E Timeout: %s" % str(TIMEOUT))
 
     try:
-        #port = PortTest()
-        port = serial.Serial(port=SERIAL_DIRECTORY,
-                             baudrate=BAUDRATE, timeout=TIMEOUT)
+        port = PortTest()
+        # port = serial.Serial(port=SERIAL_DIRECTORY,
+        #                     baudrate=BAUDRATE, timeout=TIMEOUT)
         logger.debug("Sucesso na conexao com o port")
         return port
     except(exception):

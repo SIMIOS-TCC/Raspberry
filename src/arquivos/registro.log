@@ -13642,3 +13642,57 @@ ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
 2018-11-13 22:56:47,338 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
 2018-11-13 22:56:47,339 __main__     INFO     	 Com Baudrate: 115200
 2018-11-13 22:56:47,339 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:53:09,951 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:53:09,971 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:53:09,971 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:53:09,971 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:53:09,979 __main__     WARNING  Campo 'SimioId' mal formatado na mensagem: 12345678
+2018-11-18 14:53:09,979 __main__     WARNING  Leitura mal formatada.
+2018-11-18 14:53:09,979 __main__     WARNING  Faltam campos na mensagem: ['45', '12345678>34', '12345678', '12', '12']
+2018-11-18 14:53:09,983 __main__     WARNING  Leitura mal formatada.
+2018-11-18 14:53:09,983 __main__     WARNING  Campo 'SimioId' mal formatado na mensagem: 12345678
+2018-11-18 14:53:09,983 __main__     WARNING  Leitura mal formatada.
+2018-11-18 14:54:28,691 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:54:28,691 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:54:28,695 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:54:28,695 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:55:12,455 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:55:12,455 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:55:12,455 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:55:12,455 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:55:56,574 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:55:56,574 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:55:56,574 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:55:56,574 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:57:05,341 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:57:05,345 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:57:05,345 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:57:05,345 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:58:06,716 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:58:06,716 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:58:06,716 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:58:06,716 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 14:58:49,328 __main__     INFO     Conectando-se com o port:
+2018-11-18 14:58:49,328 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 14:58:49,328 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 14:58:49,328 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 15:00:26,909 __main__     INFO     Conectando-se com o port:
+2018-11-18 15:00:26,909 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 15:00:26,913 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 15:00:26,913 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 15:01:24,031 __main__     INFO     Conectando-se com o port:
+2018-11-18 15:01:24,031 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 15:01:24,031 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 15:01:24,031 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 15:02:45,777 __main__     INFO     Conectando-se com o port:
+2018-11-18 15:02:45,777 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 15:02:45,777 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 15:02:45,777 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 16:20:28,722 __main__     INFO     Conectando-se com o port:
+2018-11-18 16:20:28,722 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 16:20:28,723 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 16:20:28,723 __main__     INFO     	 E Timeout: 3.0
+2018-11-18 16:28:21,365 __main__     INFO     Conectando-se com o port:
+2018-11-18 16:28:21,365 __main__     INFO     	 No Endereço: /dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00
+2018-11-18 16:28:21,366 __main__     INFO     	 Com Baudrate: 115200
+2018-11-18 16:28:21,366 __main__     INFO     	 E Timeout: 3.0

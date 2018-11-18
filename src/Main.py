@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import Arquivos
-import QueriesMYSQL
+#import QueriesMYSQL
 import ConexaoSerial
 from Classes import *
 
+# Checar se o banco de dados comporta o tipo enviado.
 import time
 import logging
 import datetime
@@ -12,10 +13,11 @@ import datetime
 CAMINHO_ARQUIVOS = 'arquivos/'
 SEPARADOR_VALORES_LIDOS = ";"
 
-caracteresPorCampo = {"ApId": 2, "ApTimestamp": 8,
-                      "SimioId": 2, "Distancia": 5, "Timestamp": 8}
+CONSTANTE_ELETROMAGNETICA = 3.4
+RSSI_1M = -60
 
-fazerConversaoTimestampDate = False
+caracteresPorCampo = {"ApId": 2, "SimioId": 2,
+                      "RSSI": 5, "campoDeltaTimestamp": 5}
 
 
 def Main():
@@ -53,7 +55,6 @@ def loopLeitura(portSerial):
 
 
 def instanciaLeitura(mensagem, portSerial):
-    global fazerConversaoTimestampDate
     logger.debug("Processando a mensagem: %s" % str(mensagem))
 
     # Separa cada unidade de informação da linha lida:
@@ -66,17 +67,18 @@ def instanciaLeitura(mensagem, portSerial):
         ConexaoSerial.enviaACK(portSerial, True)
 
         ap_id = mensagem.pop(0)
-        ap_timestamp = mensagem.pop(0)
         for _ in range(len(mensagem)//3):
             simio_id = mensagem.pop(0)
-            distance = mensagem.pop(0)
-            timestamp_leitura = mensagem.pop(0)
-            timestamp = timestampCorrigido(ap_timestamp, timestamp_leitura)
+            rssi = mensagem.pop(0)
+            deltaTimestamp = mensagem.pop(0)
+            # Antes de mais nada, corrige o timestamp:
+            timestamp = timestampCorrigido(int(deltaTimestamp))
+            # Coloca em um formato para mandar para o Banco:
+            dateTime = datetime.datetime.fromtimestamp(
+                timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
-            if fazerConversaoTimestampDate:
-                timestamp = datetime.datetime.fromtimestamp(timestamp)
-
-            leitura = Leitura(timestamp, ap_id, simio_id, distance)
+            leitura = Leitura(ap_id=ap_id, simio_id=simio_id,
+                              rssi=rssi, dateTime=dateTime)
 
     else:
         ConexaoSerial.enviaACK(portSerial, False)
@@ -88,7 +90,7 @@ def instanciaLeitura(mensagem, portSerial):
 
 
 def checaMensagem(mensagem):
-    """ Formato canônico da mensagem: [idAP,ApTimestamp,idSimio1,dist1,timestamp1,idSimios2,dist2,timestamp2,...] """
+    """ Formato canônico da mensagem: [idAP,idSimio1,dist1,deltaTimestamp1,idSimios2,dist2,deltaTimestamp2,...] """
 
     if isMensagemPequena(mensagem):
         return False
@@ -105,7 +107,7 @@ def checaMensagem(mensagem):
 
 
 def isMensagemPequena(mensagem):
-    if len(mensagem) < 5:
+    if len(mensagem) < 4:
         logger.warning("Mensagem muito curta: %s" % str(mensagem))
         return True
     else:
@@ -113,7 +115,7 @@ def isMensagemPequena(mensagem):
 
 
 def isCamposFaltando(mensagem):
-    if (len(mensagem)-2) % 3 != 0:
+    if (len(mensagem)-1) % 3 != 0:
         logger.warning("Faltam campos na mensagem: %s" % str(mensagem))
         return True
     else:
@@ -128,30 +130,24 @@ def isCamposMalFormatados(mensagem):
                        str(campoApId))
         return True
 
-    campoApTimestamp = mensagem[1]
-    if len(campoApTimestamp) != caracteresPorCampo["ApTimestamp"]:
-        logger.warning("Campo 'campoApTimestamp' mal formatado na mensagem: %s" %
-                       str(campoApTimestamp))
-        return True
+    for numCampo in range(len(mensagem[1:])//3):
 
-    for numCampo in range(len(mensagem[2:])//3):
-
-        campoSimioId = mensagem[2:][numCampo*3 + 0]
+        campoSimioId = mensagem[1:][numCampo*3 + 0]
         if len(campoSimioId) != caracteresPorCampo["SimioId"] or not isInt(campoSimioId):
             logger.warning("Campo 'SimioId' mal formatado na mensagem: %s" %
                            str(campoSimioId))
             return True
 
-        campoDistancia = mensagem[2:][numCampo*3 + 1]
-        if len(campoDistancia) != caracteresPorCampo["Distancia"] or not isFloat(campoDistancia):
-            logger.warning("Campo 'Distancia' mal formatado na mensagem: %s" %
+        campoDistancia = mensagem[1:][numCampo*3 + 1]
+        if len(campoDistancia) != caracteresPorCampo["RSSI"] or not isInt(campoDistancia):
+            logger.warning("Campo 'RSSI' mal formatado na mensagem: %s" %
                            str(campoDistancia))
             return True
 
-        campoTimestamp = mensagem[2:][numCampo*3 + 2]
-        if len(campoTimestamp) != caracteresPorCampo["Timestamp"] or not isInt(campoTimestamp):
+        campoDeltaTimestamp = mensagem[1:][numCampo*3 + 2]
+        if len(campoDeltaTimestamp) != caracteresPorCampo["campoDeltaTimestamp"] or not isInt(campoDeltaTimestamp):
             logger.warning(
-                "Campo 'Timestamp' mal formatado na mensagem: %s" % str(campoTimestamp))
+                "Campo 'campoDeltaTimestamp' mal formatado na mensagem: %s" % str(campoDeltaTimestamp))
             return True
 
     return False
@@ -179,12 +175,11 @@ def isFloat(string):
     return True
 
 
-def timestampCorrigido(ap_timestamp, timestamp_leitura):
+def timestampCorrigido(deltaTimestamp):
 
     timestampRaspberry = time.time()
 
-    timestamp_Corrigido = timestampRaspberry - \
-        (ap_timestamp - timestamp_leitura)
+    timestamp_Corrigido = timestampRaspberry - deltaTimestamp
 
     return timestamp_Corrigido
 
@@ -192,7 +187,8 @@ def timestampCorrigido(ap_timestamp, timestamp_leitura):
 def processaLeitura(leitura):
     if leitura:
 
-        if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.timestamp):
+        # if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.dateTime):
+        if True:
             logger.debug("Passando leitura para BD %s" % str(leitura))
 
         else:
@@ -239,5 +235,8 @@ def iniciaLogger():
 logger = iniciaLogger()
 Leitura.logger = logger
 ConexaoSerial.logger = logger
+
+Leitura.CONSTANTE_ELETROMAGNETICA = CONSTANTE_ELETROMAGNETICA
+Leitura.RSSI_1M = RSSI_1M
 
 Main()
