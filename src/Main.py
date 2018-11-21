@@ -16,7 +16,7 @@ SEPARADOR_VALORES_LIDOS = ";"
 CONSTANTE_ELETROMAGNETICA = 3.4
 RSSI_1M = -60
 
-caracteresPorCampo = {"ApId": 2, "SimioId": 2,
+caracteresPorCampo = {"ApId": 3, "SimioId": 3,
                       "RSSI": 5, "campoDeltaTimestamp": 5}
 
 
@@ -25,8 +25,6 @@ def Main():
 
     while portSerial == False:
         portSerial = ConexaoSerial.abrePort()
-        # Considerar enviar um ack quando falha:
-        #ConexaoSerial.enviaACK(portSerial, False)
     ConexaoSerial.enviaACK(portSerial, True)
 
     # Quando uma conexão for estabelecida:
@@ -80,6 +78,9 @@ def instanciaLeitura(mensagem, portSerial):
 
             leitura = Leitura(ap_id=ap_id, simio_id=simio_id,
                               rssi=rssi, dateTime=dateTime)
+
+            Arquivos.escreveArquivo(str(leitura), Arquivos.ARQUIVO_BACKUP)
+            logger.info("Leitura: %s" % str(leitura))
 
     else:
         logger.warning("Leitura mal formatada.")
