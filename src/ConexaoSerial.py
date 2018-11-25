@@ -17,7 +17,7 @@ ACK_FALHA = "n"
 def abrePort():
     logger.info("Conectando-se com o port:")
     logger.info("\t No Endereço: %s" % str(SERIAL_DIRECTORY))
-    logger.info("\t Com Baudrate: %s" % str(BAUDRATE))
+    logger.info("\t Com Baudrate:%s" % str(BAUDRATE))
     logger.info("\t E Timeout: %s" % str(TIMEOUT))
 
     try:
@@ -27,7 +27,7 @@ def abrePort():
         logger.debug("Sucesso na conexao com o port")
         return port
     except:
-        logger.error("Erro na conexao serial: %s" % str(exception))
+        logger.error("Erro na conexao serial: SerialException.")
         return False
 
 
@@ -38,6 +38,7 @@ def lerLinhaSeparada(port):
     valorLido = ""
     while True:
         caracterRecebido = port.read()
+        #logger.debug("Caractere recebida: %s" % str(caracterRecebido))
         if caracterRecebido in SEPARADORES:
             logger.debug("Mensagem recebida: %s" % str(valorLido))
             return valorLido

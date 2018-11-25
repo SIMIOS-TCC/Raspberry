@@ -27,6 +27,8 @@ def Main():
         try:
             # Quando uma conexão for estabelecida:
             loopLeitura(portSerial)
+        except KeyboardInterrupt:
+            break
         except:
             portSerial = loopConexao()
 
