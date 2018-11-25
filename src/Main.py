@@ -25,7 +25,7 @@ def Main():
 
     while portSerial == False:
         portSerial = ConexaoSerial.abrePort()
-    ConexaoSerial.enviaACK(portSerial, True)
+    #ConexaoSerial.enviaACK(portSerial, True)
 
     # Quando uma conexão for estabelecida:
     loopLeitura(portSerial)
@@ -52,7 +52,6 @@ def loopLeitura(portSerial):
             logger.debug("Nenhuma mensagem recebida...")
             time.sleep(1)
             logger.debug("Tentando novamente...")
-            input()
 
 
 def instanciaLeitura(mensagem, portSerial):

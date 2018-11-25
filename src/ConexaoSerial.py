@@ -25,7 +25,7 @@ def abrePort():
                              baudrate=BAUDRATE, timeout=TIMEOUT)
         logger.debug("Sucesso na conexao com o port")
         return port
-    except(exception):
+    except:
         logger.error("Erro na conexao serial: %s" % str(exception))
         return False
 
