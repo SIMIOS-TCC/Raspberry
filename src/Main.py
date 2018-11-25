@@ -17,7 +17,7 @@ CONSTANTE_ELETROMAGNETICA = 3.4
 RSSI_1M = -60
 
 caracteresPorCampo = {"ApId": 3, "SimioId": 3,
-                      "RSSI": 5, "campoDeltaTimestamp": 5}
+                      "RSSI": 3, "campoDeltaTimestamp": 6}
 
 
 def Main():
@@ -51,7 +51,7 @@ def loopLeitura(portSerial):
 
         if mensagemSerial is not None:
             # Instancia uma nova leitura a partir da mensagemSerial:
-            leitura = instanciaLeitura(mensagemSerial, portSerial)
+            instanciaLeitura(mensagemSerial, portSerial)
 
         elif Leitura.leiturasNaoRealizadas:
             # Se não há mais mensagens sendo recebidas, passa a processar as leituras já guardadas:
@@ -74,29 +74,31 @@ def instanciaLeitura(mensagem, portSerial):
     if "\x00" in mensagem:
         mensagem.remove("\x00")
 
-    if (checaMensagem(mensagem)):
-        ap_id = mensagem.pop(0)
-        for _ in range(len(mensagem)//3):
-            simio_id = mensagem.pop(0)
-            rssi = mensagem.pop(0)
-            deltaTimestamp = mensagem.pop(0)
-            # Antes de mais nada, corrige o timestamp:
-            timestamp = timestampCorrigido(int(deltaTimestamp))
-            # Coloca em um formato para mandar para o Banco:
-            dateTime = datetime.datetime.fromtimestamp(
-                timestamp).strftime('%Y-%m-%d %H:%M:%S')
+    mensagens = [mensagem[:len(mensagem)//4], mensagem[len(mensagem)//4:2*len(mensagem)//4],
+                 mensagem[2*len(mensagem)//4:3*len(mensagem)//4], mensagem[3*len(mensagem)//4:]]
 
-            leitura = Leitura(ap_id=ap_id, simio_id=simio_id,
-                              rssi=rssi, dateTime=dateTime)
+    for mensagem in mensagens:
+        if (checaMensagem(mensagem)):
+            ap_id = mensagem.pop(0)
+            for _ in range(len(mensagem)//3):
+                simio_id = mensagem.pop(0)
+                rssi = mensagem.pop(0)
+                deltaTimestamp = mensagem.pop(0)
+                # Antes de mais nada, corrige o timestamp:
+                timestamp = timestampCorrigido(int(deltaTimestamp))
+                # Coloca em um formato para mandar para o Banco:
+                dateTime = datetime.datetime.fromtimestamp(
+                    timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
-            Arquivos.escreveArquivo(str(leitura), Arquivos.ARQUIVO_BACKUP)
-            logger.info("Leitura: %s" % str(leitura))
+                leitura = Leitura(ap_id=ap_id, simio_id=simio_id,
+                                  rssi=rssi, dateTime=dateTime)
 
-    else:
-        logger.warning("Leitura mal formatada.")
-        leitura = None
+                Arquivos.escreveArquivo(str(leitura), Arquivos.ARQUIVO_BACKUP)
+                logger.info("Leitura: %s" % str(leitura))
 
-    return leitura
+        else:
+            logger.warning("Leitura mal formatada.")
+            leitura = None
 
 
 def checaMensagem(mensagem):
