@@ -1,3 +1,0 @@
-timestamp1;ap_id1;simio_id1;distance1;
-timestamp2;ap_id2;simio_id2;distance2;
-timestamp3;ap_id3;simio_id3;distance3;

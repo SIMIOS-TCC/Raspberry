@@ -10,9 +10,10 @@ ARQUIVO_CONFIG = 'config.ini'
 
 SECAO_CONFIG = 'ConfiguracaoConexao'
 
-#Valores default
+# Valores default
 HOST = "169.254.163.8"
-USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
+# Usuario do banco de dados cadastrado para um certo IP local.
+USER = "user"
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
 DB = "simios_db"                # Banco de dados ao qual querremos conectar.
 PORT = 3306                     # Porta TCP (valor default: 3306)
@@ -77,7 +78,7 @@ def inserir(tabela, colunas=[], valores=[]):
     return(executar(query))
 
 
-def inserirDistancia(ap_id, simio_id, distance, timestamp):
+def inserirDistancia(ap_id, simio_id, distance, dateTime):
     ''' Funcao para inserir uma linha contendo a distancia entre um ponto de acesso e um simio.
         Deve ser dado o id do simio, do ponto de acesso (ap) e a distancia entre ambos.'''
 
@@ -93,7 +94,7 @@ def inserirDistancia(ap_id, simio_id, distance, timestamp):
     query += '"' + ap_id + '"' + ","
     query += '"' + simio_id + '"' + ","
     query += '"' + distance + '"' + ","
-    query += '"' + timestamp + '"' + ")"
+    query += '"' + dateTime + '"' + ")"
 
     return(executar(query))
 

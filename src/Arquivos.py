@@ -11,9 +11,11 @@ from Classes import *
 '''
 
 CAMINHO = "arquivos"
-ARQUIVO_DADOS = "dados.txt"
 ARQUIVO_TEMP = "temp.txt"
 ARQUIVO_BACKUP = "backup.txt"
+
+NEW_LINE = "\n"
+CARRIGE_RETURN = "\r"
 
 
 def pegaLeitura(arquivo=ARQUIVO_TEMP):
@@ -50,27 +52,7 @@ def pegaLeitura(arquivo=ARQUIVO_TEMP):
     return leitura
 
 
-def colheDados():
-    ''' Colhe as leituras do arquivo de dados
-        e as coloca no arquivo temporário.
-        Separa as informações em leituras diferentes,
-        para que cada linha do temp seja um query'''
-
-    dados = abreArquivo(ARQUIVO_DADOS)
-    limpaArquivo(ARQUIVO_DADOS)
-
-    if dados:
-        logger.debug("Colhendo dados: %s \n", dados)
-
-        # Separa cada linha do arquivo lido em leituras diversas.
-        dados = dados.splitlines()
-        for dado in dados:
-            escreveArquivo(dado + "\n", ARQUIVO_TEMP)
-    else:
-        logger.debug("Sem dados para colher")
-
-
-def abreArquivo(arquivo=ARQUIVO_DADOS):
+def abreArquivo(arquivo=ARQUIVO_TEMP):
     ''' Abre o arquivo especificado e retorna seu conteúdo.
         Caso o arquivo não exista, um arquivo vazio é criado
         e uma string vazia é retornada. '''
@@ -97,8 +79,8 @@ def escreveArquivo(dados, arquivo=ARQUIVO_TEMP):
 
     try:
         with open(CAMINHO + '/' + arquivo, 'a') as escrita:
-            escrita.write(dados)
-        logger.debug("Relizando escrita de : %s", dados)
+            escrita.write(str(dados) + NEW_LINE + CARRIGE_RETURN)
+        logger.debug("Relizando escrita de : %s", str(dados))
     except:
         logger.error("Falha ao abrir o arquivo para escrita", exc_info=True)
 
