@@ -21,14 +21,23 @@ caracteresPorCampo = {"ApId": 3, "SimioId": 3,
 
 
 def Main():
+    portSerial = loopConexao()
+
+    while True:
+        try:
+            # Quando uma conexão for estabelecida:
+            loopLeitura(portSerial)
+        except:
+            portSerial = loopConexao()
+
+
+def loopConexao():
     portSerial = False
 
     while portSerial == False:
         portSerial = ConexaoSerial.abrePort()
     #ConexaoSerial.enviaACK(portSerial, True)
-
-    # Quando uma conexão for estabelecida:
-    loopLeitura(portSerial)
+    return portSerial
 
 
 def loopLeitura(portSerial):
@@ -36,11 +45,11 @@ def loopLeitura(portSerial):
 
     while True:
         # Pega a mensagem recebida do port aberto:
-        mensagem = ConexaoSerial.lerLinhaSeparada(portSerial)
+        mensagemSerial = ConexaoSerial.lerLinhaSeparada(portSerial)
 
-        if mensagem is not None:
-            # Instancia uma nova leitura a partir da mensagem:
-            leitura = instanciaLeitura(mensagem, portSerial)
+        if mensagemSerial is not None:
+            # Instancia uma nova leitura a partir da mensagemSerial:
+            leitura = instanciaLeitura(mensagemSerial, portSerial)
 
         elif Leitura.leiturasNaoRealizadas:
             # Se não há mais mensagens sendo recebidas, passa a processar as leituras já guardadas:
@@ -49,7 +58,7 @@ def loopLeitura(portSerial):
             processaLeitura(leitura)
 
         else:
-            logger.debug("Nenhuma mensagem recebida...")
+            logger.debug("Nenhuma mensagem serial recebida...")
             time.sleep(1)
             logger.debug("Tentando novamente...")
 
