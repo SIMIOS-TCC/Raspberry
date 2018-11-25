@@ -1,1 +1,6 @@
 timestamp1;idAP;idSimio1;dist1;
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:51; RSSI:224.
+
+ap_id:001; simio_id:001; distance:3.87467512046e-09; dateTime:2018-11-25 18:51:38; RSSI:226.
+
+

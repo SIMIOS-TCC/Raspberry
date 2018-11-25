@@ -1,0 +1,351 @@
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:34:59; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:34:59; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:00; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:00; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:01; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:01; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:01; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:01; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:03; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:03; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:03; RSSI:224.
+ap_id:001; simio_id:224; distance:0.0171907220186; dateTime:2018-11-23 06:48:14; RSSI:000.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:00; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:02; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:04; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:224; distance:0.0171907220186; dateTime:2018-11-23 06:48:12; RSSI:000.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:35:05; RSSI:225.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:35:05; RSSI:225.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:05; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:07; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:06; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:06; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:06; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:06; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:06; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:35:07; RSSI:224.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:35:08; RSSI:225.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:51; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:51; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:51; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:51; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:51; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:52; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:52; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:53; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:53; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:53; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:53; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:53; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:54; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:56; RSSI:224.
+ap_id:001; simio_id:224; distance:0.0171907220186; dateTime:2018-11-23 07:00:55; RSSI:000.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:55; RSSI:224.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:47:56; RSSI:225.
+ap_id:001; simio_id:001; distance:5.43618362015e-09; dateTime:2018-11-25 18:47:56; RSSI:221.
+ap_id:001; simio_id:001; distance:7.12756483444e-09; dateTime:2018-11-25 18:47:56; RSSI:217.
+ap_id:001; simio_id:001; distance:5.81709132937e-09; dateTime:2018-11-25 18:47:56; RSSI:220.
+ap_id:001; simio_id:001; distance:1.14504756994e-08; dateTime:2018-11-25 18:47:57; RSSI:210.
+ap_id:001; simio_id:001; distance:1.71907220186e-08; dateTime:2018-11-25 18:47:57; RSSI:204.
+ap_id:001; simio_id:001; distance:1.96841944729e-08; dateTime:2018-11-25 18:47:58; RSSI:202.
+ap_id:001; simio_id:001; distance:1.8395257958e-08; dateTime:2018-11-25 18:47:58; RSSI:203.
+ap_id:001; simio_id:001; distance:5.81709132937e-09; dateTime:2018-11-25 18:47:59; RSSI:220.
+ap_id:001; simio_id:001; distance:6.224688844e-09; dateTime:2018-11-25 18:47:59; RSSI:219.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:47:59; RSSI:225.
+ap_id:001; simio_id:001; distance:4.747561379e-09; dateTime:2018-11-25 18:47:59; RSSI:223.
+ap_id:001; simio_id:229; distance:0.0171907220186; dateTime:2018-11-23 07:00:54; RSSI:000.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:47:57; RSSI:225.
+ap_id:001; simio_id:001; distance:7.12756483444e-09; dateTime:2018-11-25 18:47:58; RSSI:217.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:58; RSSI:224.
+ap_id:001; simio_id:001; distance:8.73326162383e-09; dateTime:2018-11-25 18:47:59; RSSI:214.
+ap_id:001; simio_id:001; distance:1.07006895569e-08; dateTime:2018-11-25 18:47:59; RSSI:211.
+ap_id:001; simio_id:001; distance:1.31113393742e-08; dateTime:2018-11-25 18:47:59; RSSI:208.
+ap_id:001; simio_id:001; distance:1.31113393742e-08; dateTime:2018-11-25 18:47:59; RSSI:208.
+ap_id:001; simio_id:001; distance:3.87467512046e-09; dateTime:2018-11-25 18:51:38; RSSI:226.
+ap_id:001; simio_id:001; distance:3.87467512046e-09; dateTime:2018-11-25 18:51:38; RSSI:226.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:51:38; RSSI:225.
+ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:51:39; RSSI:224.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:51:39; RSSI:225.
+ap_id:001; simio_id:001; distance:4.1461695598e-09; dateTime:2018-11-25 18:51:40; RSSI:225.
+ap_id:001; simio_id:225; distance:0.0171907220186; dateTime:2018-11-23 07:04:30; RSSI:000.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:37; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:38; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:39; RSSI:234.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:51:39; RSSI:235.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:39; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:39; RSSI:234.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:51:39; RSSI:235.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:40; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:40; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:40; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:40; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:41; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:41; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:51:41; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:56; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:56; RSSI:234.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:53:57; RSSI:235.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:57; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:58; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:58; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:58; RSSI:234.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:53:58; RSSI:235.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:53:58; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:00; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:00; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:00; RSSI:234.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:54:00; RSSI:235.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:00; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:01; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:01; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:02; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:02; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:02; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:02; RSSI:234.
+ap_id:001; simio_id:235; distance:0.0171907220186; dateTime:2018-11-23 07:07:07; RSSI:000.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:01; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:03; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:03; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:03; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:03; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:03; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:03; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:04; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:05; RSSI:234.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:54:05; RSSI:235.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:05; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:05; RSSI:234.
+ap_id:001; simio_id:001; distance:2.25393390473e-09; dateTime:2018-11-25 18:54:06; RSSI:234.
+ap_id:001; simio_id:234; distance:0.0171907220186; dateTime:2018-11-23 07:07:06; RSSI:000.
+ap_id:001; simio_id:001; distance:7.12756483444e-09; dateTime:2018-11-25 18:59:10; RSSI:217.
+ap_id:001; simio_id:001; distance:6.66084629081e-09; dateTime:2018-11-25 18:59:10; RSSI:218.
+ap_id:001; simio_id:001; distance:6.66084629081e-09; dateTime:2018-11-25 18:59:10; RSSI:218.
+ap_id:001; simio_id:001; distance:6.224688844e-09; dateTime:2018-11-25 18:59:10; RSSI:219.
+ap_id:001; simio_id:001; distance:6.66084629081e-09; dateTime:2018-11-25 18:59:11; RSSI:218.
+ap_id:001; simio_id:001; distance:7.62698585902e-09; dateTime:2018-11-25 18:59:11; RSSI:216.
+ap_id:001; simio_id:001; distance:7.62698585902e-09; dateTime:2018-11-25 18:59:11; RSSI:216.
+ap_id:001; simio_id:001; distance:8.73326162383e-09; dateTime:2018-11-25 18:59:11; RSSI:214.
+ap_id:001; simio_id:001; distance:5.81709132937e-09; dateTime:2018-11-25 18:59:11; RSSI:220.
+ap_id:001; simio_id:001; distance:2.76169981334e-09; dateTime:2018-11-25 18:59:13; RSSI:231.
+ap_id:001; simio_id:001; distance:1.96841944729e-09; dateTime:2018-11-25 18:59:13; RSSI:236.
+ap_id:001; simio_id:001; distance:2.10634454232e-09; dateTime:2018-11-25 18:59:13; RSSI:235.
+ap_id:001; simio_id:001; distance:2.41186469964e-09; dateTime:2018-11-25 18:59:13; RSSI:233.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:13; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:14; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:14; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:16; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:16; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:15; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:16; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:16; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:16; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:17; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:18; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:18; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:18; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:18; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:18; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:19; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:21; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:21; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:20; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:21; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:21; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:22; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:22; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:22; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:23; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:23; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:23; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:23; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:24; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:27; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:24; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:25; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:27; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:27; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:27; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:27; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:28; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:28; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:28; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:29; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:29; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:29; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:29; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:29; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:29; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:31; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:31; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:30; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:30; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:30; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:30; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:30; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:32; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:32; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:31; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:32; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:32; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:33; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:33; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:34; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:34; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:34; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:35; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:35; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:35; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:35; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:36; RSSI:232.
+ap_id:001; simio_id:001; distance:2.58086154042e-09; dateTime:2018-11-25 18:59:37; RSSI:232.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:03:48; RSSI:195.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:03:48; RSSI:194.
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-25 19:03:48; RSSI:193.
+ap_id:001; simio_id:001; distance:3.87467512046e-08; dateTime:2018-11-25 19:03:48; RSSI:192.
+ap_id:001; simio_id:001; distance:3.87467512046e-08; dateTime:2018-11-25 19:03:49; RSSI:192.
+ap_id:001; simio_id:001; distance:3.87467512046e-08; dateTime:2018-11-25 19:03:49; RSSI:192.
+ap_id:001; simio_id:001; distance:4.1461695598e-08; dateTime:2018-11-25 19:03:49; RSSI:191.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:50; RSSI:189.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:50; RSSI:189.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:51; RSSI:189.
+ap_id:001; simio_id:001; distance:5.43618362015e-08; dateTime:2018-11-25 19:03:51; RSSI:187.
+ap_id:001; simio_id:001; distance:5.08021804691e-08; dateTime:2018-11-25 19:03:52; RSSI:188.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:52; RSSI:189.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:53; RSSI:189.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:52; RSSI:189.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:03:52; RSSI:190.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:52; RSSI:189.
+ap_id:001; simio_id:001; distance:5.08021804691e-08; dateTime:2018-11-25 19:03:53; RSSI:188.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:53; RSSI:189.
+ap_id:001; simio_id:001; distance:5.81709132937e-08; dateTime:2018-11-25 19:03:53; RSSI:186.
+ap_id:001; simio_id:001; distance:5.81709132937e-08; dateTime:2018-11-25 19:03:54; RSSI:186.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:03:54; RSSI:189.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:03:54; RSSI:190.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:03:54; RSSI:190.
+ap_id:001; simio_id:001; distance:4.1461695598e-08; dateTime:2018-11-25 19:03:54; RSSI:191.
+ap_id:001; simio_id:001; distance:3.87467512046e-08; dateTime:2018-11-25 19:03:54; RSSI:192.
+ap_id:001; simio_id:001; distance:3.87467512046e-08; dateTime:2018-11-25 19:03:55; RSSI:192.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:03:56; RSSI:195.
+ap_id:001; simio_id:001; distance:2.58086154042e-08; dateTime:2018-11-25 19:03:55; RSSI:198.
+ap_id:001; simio_id:001; distance:2.58086154042e-08; dateTime:2018-11-25 19:03:55; RSSI:198.
+ap_id:001; simio_id:001; distance:2.9552092352e-08; dateTime:2018-11-25 19:03:55; RSSI:196.
+ap_id:001; simio_id:001; distance:5.43618362015e-08; dateTime:2018-11-25 19:03:55; RSSI:187.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:03:56; RSSI:184.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:03:57; RSSI:184.
+ap_id:001; simio_id:001; distance:6.224688844e-08; dateTime:2018-11-25 19:03:57; RSSI:185.
+ap_id:001; simio_id:001; distance:5.43618362015e-08; dateTime:2018-11-25 19:03:57; RSSI:187.
+ap_id:001; simio_id:001; distance:5.08021804691e-08; dateTime:2018-11-25 19:03:57; RSSI:188.
+ap_id:001; simio_id:001; distance:2.9552092352e-08; dateTime:2018-11-25 19:03:57; RSSI:196.
+ap_id:001; simio_id:001; distance:2.10634454232e-08; dateTime:2018-11-25 19:03:58; RSSI:201.
+ap_id:001; simio_id:001; distance:2.10634454232e-08; dateTime:2018-11-25 19:03:58; RSSI:201.
+ap_id:001; simio_id:001; distance:2.41186469964e-08; dateTime:2018-11-25 19:03:59; RSSI:199.
+ap_id:001; simio_id:001; distance:2.58086154042e-08; dateTime:2018-11-25 19:03:59; RSSI:198.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:03:57; RSSI:190.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:03:57; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:03:57; RSSI:194.
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-25 19:03:58; RSSI:193.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:03:59; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:03:59; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:00; RSSI:194.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:04:00; RSSI:195.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:00; RSSI:194.
+ap_id:001; simio_id:001; distance:2.10634454232e-08; dateTime:2018-11-25 19:04:00; RSSI:201.
+ap_id:001; simio_id:001; distance:2.25393390473e-08; dateTime:2018-11-25 19:04:00; RSSI:200.
+ap_id:001; simio_id:001; distance:2.76169981334e-08; dateTime:2018-11-25 19:04:01; RSSI:197.
+ap_id:001; simio_id:001; distance:2.9552092352e-08; dateTime:2018-11-25 19:04:02; RSSI:196.
+ap_id:001; simio_id:001; distance:4.1461695598e-08; dateTime:2018-11-25 19:04:02; RSSI:191.
+ap_id:001; simio_id:001; distance:5.08021804691e-08; dateTime:2018-11-25 19:04:02; RSSI:188.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:04:02; RSSI:189.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:04:02; RSSI:190.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:04:03; RSSI:190.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:04; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:04; RSSI:194.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:04:04; RSSI:195.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:02; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:02; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:02; RSSI:194.
+ap_id:001; simio_id:001; distance:3.87467512046e-08; dateTime:2018-11-25 19:04:03; RSSI:192.
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-25 19:04:03; RSSI:193.
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-25 19:04:04; RSSI:193.
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-25 19:04:04; RSSI:193.
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-25 19:04:04; RSSI:193.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:04:04; RSSI:195.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:04; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:05; RSSI:194.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:04:06; RSSI:195.
+ap_id:001; simio_id:001; distance:2.9552092352e-08; dateTime:2018-11-25 19:04:06; RSSI:196.
+ap_id:001; simio_id:001; distance:2.9552092352e-08; dateTime:2018-11-25 19:04:06; RSSI:196.
+ap_id:001; simio_id:001; distance:2.9552092352e-08; dateTime:2018-11-25 19:04:06; RSSI:196.
+ap_id:001; simio_id:001; distance:3.16227766017e-08; dateTime:2018-11-25 19:04:06; RSSI:195.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:06; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:07; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:08; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:08; RSSI:194.
+ap_id:001; simio_id:001; distance:3.38385515343e-08; dateTime:2018-11-25 19:04:08; RSSI:194.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:04:06; RSSI:189.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:04:06; RSSI:189.
+ap_id:001; simio_id:001; distance:4.43668733098e-08; dateTime:2018-11-25 19:04:07; RSSI:190.
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-25 19:04:07; RSSI:189.
+ap_id:001; simio_id:001; distance:5.43618362015e-08; dateTime:2018-11-25 19:04:07; RSSI:187.
+ap_id:001; simio_id:001; distance:5.81709132937e-08; dateTime:2018-11-25 19:04:08; RSSI:186.
+ap_id:001; simio_id:001; distance:6.224688844e-08; dateTime:2018-11-25 19:04:08; RSSI:185.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:04:08; RSSI:184.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:04:08; RSSI:184.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:04:09; RSSI:184.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:04:09; RSSI:184.
+ap_id:001; simio_id:001; distance:8.16140079325e-08; dateTime:2018-11-25 19:04:10; RSSI:181.
+ap_id:001; simio_id:001; distance:8.16140079325e-08; dateTime:2018-11-25 19:04:10; RSSI:181.
+ap_id:001; simio_id:001; distance:6.66084629081e-08; dateTime:2018-11-25 19:04:10; RSSI:184.
+ap_id:001; simio_id:001; distance:7.12756483444e-08; dateTime:2018-11-25 19:04:10; RSSI:183.
+ap_id:001; simio_id:001; distance:7.12756483444e-08; dateTime:2018-11-25 19:04:10; RSSI:183.
+ap_id:001; simio_id:001; distance:7.62698585902e-08; dateTime:2018-11-25 19:04:10; RSSI:182.
+ap_id:001; simio_id:001; distance:8.73326162383e-08; dateTime:2018-11-25 19:04:11; RSSI:180.
+ap_id:001; simio_id:001; distance:1.8395257958e-07; dateTime:2018-11-25 19:04:12; RSSI:169.
+ap_id:001; simio_id:001; distance:2.10634454232e-07; dateTime:2018-11-25 19:04:12; RSSI:167.
+ap_id:001; simio_id:001; distance:1.96841944729e-07; dateTime:2018-11-25 19:04:12; RSSI:168.
+

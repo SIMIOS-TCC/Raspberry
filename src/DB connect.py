@@ -2,7 +2,7 @@ import MySQLdb
 
 # Contantes da conexao com o banco de dados
 #HOST = "2804:14d:8e84:871:e8db:3fc4:e530:a576"        # Endereco local da hospedagem do banco de dados.
-HOST = "2804:14d:8e84:871::2"
+HOST = "192.168.0.14"
 USER = "user"                   # Usuario do banco de dados cadastrado para um certo IP local.
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
 DB = "simios_db"                # Banco de dados ao qual querremos conectar.
