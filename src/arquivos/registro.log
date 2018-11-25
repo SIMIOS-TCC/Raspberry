@@ -161,3 +161,67 @@ ProgrammingError: (1146, "Table 'simios_db.teste' doesn't exist")
 2018-10-28 16:18:42,181 __main__     INFO     Acesso ao arquivo: temp.txt
 2018-10-28 16:19:39,874 __main__     INFO     Acesso ao arquivo: temp.txt
 2018-11-11 19:03:15,036 __main__     WARNING  Leitura mal formatada.
+2018-11-13 10:39:44,198 __main__     WARNING  Leitura mal formatada.
+2018-11-13 10:50:27,436 __main__     WARNING  Houve um erro ao abrir o port serial.
+2018-11-13 11:28:29,302 __main__     WARNING  Mensagem muito curta: ['2', 'timestamp2', '\x00']
+2018-11-13 11:28:29,353 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:28:29,399 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:31:22,426 __main__     WARNING  Faltam campos na mensagem: ['timestamp1', 'idSimio2', 'dist2', 'timestamp2']
+2018-11-13 11:31:22,479 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:31:22,527 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:31:28,229 __main__     WARNING  Faltam campos na mensagem: ['idAP', 'idSimio1', 'dist1', 'timestamp1', 'idSimio2', 'dist2', 'timestamp2']
+2018-11-13 11:31:28,281 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:31:28,339 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:31:34,015 __main__     WARNING  Faltam campos na mensagem: ['idAP', 'idSimio1', 'dist1', 'timestamp1', 'idSimio2', 'dist2', 'timestamp2']
+2018-11-13 11:31:34,076 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:31:34,123 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:35:24,410 __main__     WARNING  Mensagem muito curta: ['']
+2018-11-13 11:35:24,457 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:35:24,506 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:35:31,102 __main__     WARNING  Faltam campos na mensagem: ['idAP', 'idSimio1', 'dist1', 'timestamp1', 'idSimio2', 'dist2', 'timestamp2']
+2018-11-13 11:35:31,164 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:35:31,220 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:38:20,389 __main__     WARNING  Mensagem muito curta: ['stamp2']
+2018-11-13 11:38:20,443 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:38:20,494 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:38:26,731 __main__     WARNING  Faltam campos na mensagem: ['idAP', 'idSimio1', 'dist1', 'timestamp1', 'idSimio2', 'dist2', 'timestamp2']
+2018-11-13 11:38:26,792 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:38:26,846 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:39:53,065 __main__     WARNING  Mensagem muito curta: ['imio2', 'dist2', 'timestamp2']
+2018-11-13 11:39:53,127 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:39:53,180 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:42:10,787 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 177, in conectar
+    host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '169.254.163.8' (110)")
+2018-11-13 11:44:52,502 __main__     WARNING  Houve um erro ao abrir o port serial.
+2018-11-13 11:45:31,560 __main__     WARNING  Houve um erro ao abrir o port serial.
+2018-11-13 11:47:40,773 __main__     WARNING  Mensagem muito curta: ['Simio2', 'dist2', 'timestamp2']
+2018-11-13 11:47:40,884 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:47:40,935 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:50:02,007 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 177, in conectar
+    host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '169.254.163.8' (110)")
+2018-11-13 11:51:59,129 __main__     WARNING  Faltam campos na mensagem: ['', 'dist1', 'timestamp1', 'idSimio2', 'dist2', 'timestamp2']
+2018-11-13 11:51:59,247 __main__     WARNING  Leitura mal formatada.
+2018-11-13 11:51:59,307 __main__     WARNING  Campos com valores inválidos ou leitura inválida: None
+2018-11-13 11:54:12,887 QueriesMYSQL ERROR    Erro na conexão com o Banco de Dados
+Traceback (most recent call last):
+  File "/home/pi/Projeto SIMIOS/src/QueriesMYSQL.py", line 177, in conectar
+    host=host, user=user, passwd=passwd, db=db, port=port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '169.254.163.8' (110)")
