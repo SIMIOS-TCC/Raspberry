@@ -131,7 +131,8 @@ def executar(query):
         pegos aqui. Os erros de conexao sao tratados na funcao conexao. '''
 
     # Realiza a conexao ao banco de dados. Retona None se falhou.
-    conexao = conectar()
+    #conexao = conectar()
+    global conexao
 
     status = False
 
@@ -264,5 +265,6 @@ def iniciaLogger():
     return logger
 
 
-config = iniciaConfig()
+#config = iniciaConfig()
+conexao = conectar()
 logger = iniciaLogger()
