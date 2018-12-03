@@ -48,7 +48,13 @@ Além da classe Leitura, há também a classe PortTest. Um objeto desta classe �
 
 ### ConexaoSerial.py
 
-É o módulo criado para lidar com a conexão com a porta serial, como seu nome sugere. 
+É o módulo criado para lidar com a conexão com a porta serial, como seu nome sugere. Ele define o diretório em que está definida a porta conectada, e parâmetros de comunicação como BAUDRATE e TIMEOUT. 
+
+Possui ao todo três funções:
+
+* abrePort(): função que testa se a porta serial está aberta e se há comunicação
+* lerLinhaSeparada(porta): retorna um valor recebido selecionado de acordo com o tipo de separador escolhido na mensagem
+* enviaACK(porta, resultado): envia uma mensagem pela porta serial. Se a mensagem for enviada com sucesso, retorna um booleano true, do contrário, um false.
 
 ### DB connect.py
 
