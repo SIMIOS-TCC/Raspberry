@@ -32,9 +32,23 @@ Há ainda funções para depuração da mensagem e verificação de seu formato,
 
 ### Arquivos.py
 
+Este módulo é responsável por escrever os dados em arquivos, como backup.
+
 ### Classes.py
 
+Este módulo contém a classe Leitura. Um objeto desta classe é criado sempre que uma nova leitura é realizada. Ela tem como construtor:
+
+* Leitura(ap_id, simio_id, rssi, dateTime), cujos parâmetros são o id do módulo que enviou os dados, o id do macaco, o valor do parâmetro RSSI e o horário do dia.
+
+É este objeto que faz o cálculo da posição média do macado, pelo método:
+
+* converteEmDistancia(rssi)
+
+Além da classe Leitura, há também a classe PortTest. Um objeto desta classe é instanciado quando se deseja testar a porta serial sem que ela esteja necessariamente conectada a uma das placas. Ela é usada no arquivo ConexaoSerial.py
+
 ### ConexaoSerial.py
+
+É o módulo criado para lidar com a conexão com a porta serial, como seu nome sugere. 
 
 ### DB connect.py
 
