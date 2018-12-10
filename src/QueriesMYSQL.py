@@ -266,8 +266,5 @@ def iniciaLogger():
 
 
 #config = iniciaConfig()
-<<<<<<< HEAD
-=======
-conexao = conectar()
->>>>>>> cb56cf85101e0e210b4585e08e10ad73c19e0f16
 logger = iniciaLogger()
+conexao = conectar()
