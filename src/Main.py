@@ -8,6 +8,7 @@ from Classes import *
 # Checar se o banco de dados comporta o tipo enviado.
 import time
 import logging
+import colorlog
 import datetime
 
 CAMINHO_ARQUIVOS = 'arquivos/'
@@ -73,6 +74,7 @@ def instanciaLeitura(mensagem, portSerial):
 
     if "\x00" in mensagem:
         mensagem.remove("\x00")
+    mensagem = [m for m in mensagem if not m == '']
 
     mensagens = [mensagem[:len(mensagem)//4], mensagem[len(mensagem)//4:2*len(mensagem)//4],
                  mensagem[2*len(mensagem)//4:3*len(mensagem)//4], mensagem[3*len(mensagem)//4:]]
@@ -226,7 +228,8 @@ def iniciaLogger():
     handler = logging.StreamHandler()
     # Mudar para INFO, WARNING ou ERROR em produção.
     handler.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(levelname)-8s : %(message)s')
+    #formatter = logging.Formatter('%(levelname)-8s : %(message)s')
+    formatter = colorlog.ColoredFormatter('  %(log_color)s%(levelname)-8s%(reset)s : %(log_color)s%(message)s%(reset)s')
     handler.setFormatter(formatter)
 
     logger.addHandler(handler)

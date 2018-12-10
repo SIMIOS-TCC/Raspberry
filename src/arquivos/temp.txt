@@ -3,4 +3,224 @@ ap_id:001; simio_id:001; distance:4.43668733098e-09; dateTime:2018-11-25 18:47:5
 
 ap_id:001; simio_id:001; distance:3.87467512046e-09; dateTime:2018-11-25 18:51:38; RSSI:226.
 
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-24 19:12:21; RSSI:001.
+
+ap_id:001; simio_id:004; distance:0.0160650600385; dateTime:2018-11-24 19:12:21; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-24 19:19:43; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-24 19:37:39; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:20:59; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-24 19:21:00; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-24 19:21:00; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-24 19:21:00; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-24 19:21:00; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-24 19:37:40; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 04:28:37; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 06:08:37; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 04:28:37; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 05:01:57; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 05:51:57; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 05:18:37; RSSI:001.
+
+ap_id:001; simio_id:001; distance:3.62095835025e-08; dateTime:2018-11-27 10:35:02; RSSI:193.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 03:21:57; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 03:21:57; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 02:31:57; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 02:31:57; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 02:31:57; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 02:48:37; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 02:48:38; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 03:05:18; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 08:40:42; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 08:24:02; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 05:20:42; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 04:47:22; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 05:04:02; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 05:54:02; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 05:05:41; RSSI:001.
+
+ap_id:001; simio_id:006; distance:0.0160650600385; dateTime:2018-11-25 09:15:41; RSSI:001.
+
+ap_id:001; simio_id:006; distance:0.0160650600385; dateTime:2018-11-25 06:12:21; RSSI:001.
+
+ap_id:001; simio_id:005; distance:0.0160650600385; dateTime:2018-11-25 00:22:21; RSSI:001.
+
+ap_id:001; simio_id:005; distance:0.0160650600385; dateTime:2018-11-25 00:05:41; RSSI:001.
+
+ap_id:001; simio_id:005; distance:0.0160650600385; dateTime:2018-11-25 00:22:21; RSSI:001.
+
+ap_id:001; simio_id:005; distance:0.0160650600385; dateTime:2018-11-25 00:22:21; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-24 23:15:41; RSSI:001.
+
+ap_id:001; simio_id:005; distance:0.0160650600385; dateTime:2018-11-24 22:25:41; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 07:03:46; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 06:30:26; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 06:13:46; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 06:13:46; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 06:30:26; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 05:57:06; RSSI:001.
+
+ap_id:001; simio_id:000; distance:4.1461695598e-08; dateTime:2018-11-27 10:40:11; RSSI:191.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 03:43:46; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 07:03:47; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 07:03:47; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 05:07:07; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 04:50:27; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 04:50:27; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 08:27:07; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 06:13:47; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 07:03:47; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 04:00:27; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 07:53:47; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 11:47:07; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 05:40:27; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 06:47:07; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 09:00:27; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 09:00:27; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 10:57:07; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 06:30:27; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 11:47:07; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 08:43:47; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 08:27:07; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 07:03:46; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 07:53:54; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 09:17:14; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 11:30:34; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 06:30:34; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 07:03:54; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 07:03:54; RSSI:001.
+
+ap_id:001; simio_id:001; distance:4.747561379e-08; dateTime:2018-11-27 10:40:18; RSSI:189.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 07:03:54; RSSI:001.
+
+ap_id:001; simio_id:004; distance:0.0160650600385; dateTime:2018-11-25 07:20:34; RSSI:001.
+
+ap_id:001; simio_id:004; distance:0.0160650600385; dateTime:2018-11-25 05:23:54; RSSI:001.
+
+ap_id:001; simio_id:004; distance:0.0160650600385; dateTime:2018-11-25 05:07:14; RSSI:001.
+
+ap_id:001; simio_id:004; distance:0.0160650600385; dateTime:2018-11-25 06:13:54; RSSI:001.
+
+ap_id:001; simio_id:004; distance:0.0160650600385; dateTime:2018-11-25 08:10:34; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 07:53:54; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 06:39:24; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 08:52:44; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 12:29:24; RSSI:001.
+
+ap_id:001; simio_id:003; distance:0.0160650600385; dateTime:2018-11-25 09:59:24; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 08:52:44; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 08:36:04; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 08:52:44; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 08:19:24; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 07:29:24; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 07:46:04; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 07:46:04; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 07:46:04; RSSI:001.
+
+ap_id:001; simio_id:002; distance:0.0160650600385; dateTime:2018-11-25 07:29:24; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 07:29:25; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 07:29:25; RSSI:001.
+
+ap_id:001; simio_id:001; distance:0.0160650600385; dateTime:2018-11-25 08:36:05; RSSI:001.
+
+ap_id:001; simio_id:000; distance:0.0160650600385; dateTime:2018-11-25 06:53:20; RSSI:001.
+
+ap_id:001; simio_id:193; distance:0.0171907220186; dateTime:2018-11-24 23:33:20; RSSI:000.
+
+ap_id:001; simio_id:196; distance:0.0171907220186; dateTime:2018-11-24 23:33:23; RSSI:000.
+
 

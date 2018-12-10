@@ -11,7 +11,7 @@ ARQUIVO_CONFIG = 'config.ini'
 SECAO_CONFIG = 'ConfiguracaoConexao'
 
 # Valores default
-HOST = "192.168.0.14"
+HOST = "192.168.0.163"
 # Usuario do banco de dados cadastrado para um certo IP local.
 USER = "user"
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
@@ -264,5 +264,5 @@ def iniciaLogger():
     return logger
 
 
-config = iniciaConfig()
+#config = iniciaConfig()
 logger = iniciaLogger()
