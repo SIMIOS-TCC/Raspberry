@@ -11,7 +11,7 @@ ARQUIVO_CONFIG = 'config.ini'
 SECAO_CONFIG = 'ConfiguracaoConexao'
 
 # Valores default
-HOST = "192.168.0.163"
+HOST = "192.168.0.17"
 # Usuario do banco de dados cadastrado para um certo IP local.
 USER = "user"
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.
@@ -98,6 +98,30 @@ def inserirDistancia(ap_id, simio_id, distance, dateTime):
 
     return(executar(query))
 
+def inserirDistancias(leituras):
+    '''Recebe uma lista de leituras e monta uma 
+       query com todas para enviar ua única vez.'''
+
+    query = "INSERT INTO `" + DB + "`.`" + SIMIO_DISTANCE + "` ("
+
+    query += AP_ID + ","
+    query += SIMIO_ID + ","
+    query += DISTANCE + ","
+    query += TIMESTAMP + ")"
+    
+    query += "VALUES "
+    for leitura in leituras:
+        query += "("
+        query += '"' + leitura.ap_id + '"' + ","
+        query += '"' + leitura.simio_id + '"' + ","
+        query += '"' + leitura.distance + '"' + ","
+        query += '"' + leitura.dateTime + '"' + "),"
+
+    query = query[:-1]
+    query += ";"
+
+    return(executar(query))
+
 
 def ler(tabela, colunas):
     ''' Funcao para ler valores de uma tabela dentro do banco de dados conectado.
@@ -160,8 +184,9 @@ def executar(query):
 
         finally:
             # Importante sempre fechar a conexao e o cursor
-            cursor.close()
-            conexao.close()  # ao finalizar uma transacao.
+            #cursor.close()
+            #conexao.close()  # ao finalizar uma transacao.
+            pass
 
     else:
         status = False

@@ -123,8 +123,9 @@ def executar(query):
             conexao.rollback()                                  #   desfazemos-la e verificamos o erro.
             
         finally:
-            cursor.close()                                      # Importante sempre fechar a conexao e o cursor
-            conexao.close()                                     #   ao finalizar uma transacao.
+            #cursor.close()                                      # Importante sempre fechar a conexao e o cursor
+            #conexao.close()                                     #   ao finalizar uma transacao.
+            pass
     else:
         pass
 
@@ -141,4 +142,4 @@ def conectar(host=HOST, user=USER, passwd=PASSWORD, db=DB, port=PORT):
         print "Erro na conexao com MYSQL. \n [%d]: %s" % (erro.args[0], erro.args[1])
         return None
 
-main()
+#main()

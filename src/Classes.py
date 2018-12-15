@@ -33,7 +33,7 @@ class Leitura:
     @staticmethod
     def coverteEmDistancia(rssi):
         #RSSI = -10*n*log10(d) + A
-        return 10**((rssi - Leitura.RSSI_1M)/(-10*Leitura.CONSTANTE_ELETROMAGNETICA))
+        return 10**((Leitura.RSSI_1M - rssi)/(-10*Leitura.CONSTANTE_ELETROMAGNETICA))
 
 
 class PortTest:

@@ -14,8 +14,8 @@ import datetime
 CAMINHO_ARQUIVOS = 'arquivos/'
 SEPARADOR_VALORES_LIDOS = ";"
 
-CONSTANTE_ELETROMAGNETICA = 3.4
-RSSI_1M = -60
+CONSTANTE_ELETROMAGNETICA = 2.95
+RSSI_1M = 55
 
 caracteresPorCampo = {"ApId": 3, "SimioId": 3,
                       "RSSI": 3, "campoDeltaTimestamp": 6}
@@ -30,8 +30,6 @@ def Main():
             loopLeitura(portSerial)
         except KeyboardInterrupt:
             break
-        except:
-            portSerial = loopConexao()
 
 
 def loopConexao():
@@ -57,8 +55,10 @@ def loopLeitura(portSerial):
         elif Leitura.leiturasNaoRealizadas:
             # Se não há mais mensagens sendo recebidas, passa a processar as leituras já guardadas:
             logger.debug("Pegando leituras não realizadas.")
-            leitura = Leitura.leiturasNaoRealizadas.pop(0)
-            processaLeitura(leitura)
+            #leitura = Leitura.leiturasNaoRealizadas.pop(0)
+            #processaLeitura(leitura)
+            processaLeituras(Leitura.leiturasNaoRealizadas)
+            Leitura.leiturasNaoRealizadas = []
 
         else:
             logger.debug("Nenhuma mensagem serial recebida...")
@@ -76,8 +76,10 @@ def instanciaLeitura(mensagem, portSerial):
         mensagem.remove("\x00")
     mensagem = [m for m in mensagem if not m == '']
 
-    mensagens = [mensagem[:len(mensagem)//4], mensagem[len(mensagem)//4:2*len(mensagem)//4],
-                 mensagem[2*len(mensagem)//4:3*len(mensagem)//4], mensagem[3*len(mensagem)//4:]]
+    #mensagens = [mensagem[:len(mensagem)//4], mensagem[len(mensagem)//4:2*len(mensagem)//4],
+                 #mensagem[2*len(mensagem)//4:3*len(mensagem)//4], mensagem[3*len(mensagem)//4:]]
+
+    mensagens = [mensagem]
 
     for mensagem in mensagens:
         if (checaMensagem(mensagem)):
@@ -212,6 +214,16 @@ def processaLeitura(leitura):
     else:
         logger.warning(
             "Campos com valores inválidos ou leitura inválida: %s" % str(leitura))
+
+def processaLeituras(leituras):
+    leiturasParaescrever = [leitura for leitura in leituras if leitura]
+    if QueriesMYSQL.inserirDistancias(leiturasParaescrever):
+        logger.debug("Passando leitura para BD %s" % str(leiturasParaescrever))
+
+    else:
+        #Arquivos.escreveArquivo(
+            #str(leitura) + '\n', Arquivos.ARQUIVO_TEMP)
+        logger.warning("Leitura não escrita no banco: %s" % str(leiturasParaescrever))
 
 
 def iniciaLogger():

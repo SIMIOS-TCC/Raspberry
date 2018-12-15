@@ -5,7 +5,7 @@ import serial
 
 SEPARADORES = ["."]
 
-SERIAL_DIRECTORY = "/dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if03"
+SERIAL_DIRECTORY = "/dev/serial/by-id/usb-Texas_Instruments_XDS110__02.03.00.14__Embed_with_CMSIS-DAP_L5145-if00"
 
 BAUDRATE = 115200
 TIMEOUT = 3.0
