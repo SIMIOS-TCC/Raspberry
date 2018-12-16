@@ -11,7 +11,7 @@ ARQUIVO_CONFIG = 'config.ini'
 SECAO_CONFIG = 'ConfiguracaoConexao'
 
 # Valores default
-HOST = "192.168.0.17"
+HOST = "192.168.0.12"
 # Usuario do banco de dados cadastrado para um certo IP local.
 USER = "user"
 PASSWORD = "user123"            # Senha deste mesmo usuario cadastrado.

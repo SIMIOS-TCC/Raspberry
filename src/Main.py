@@ -5,7 +5,6 @@ import QueriesMYSQL
 import ConexaoSerial
 from Classes import *
 
-# Checar se o banco de dados comporta o tipo enviado.
 import time
 import logging
 import colorlog
@@ -15,7 +14,15 @@ CAMINHO_ARQUIVOS = 'arquivos/'
 SEPARADOR_VALORES_LIDOS = ";"
 
 CONSTANTE_ELETROMAGNETICA = 2.95
-RSSI_1M = 55
+#RSSI_1M = 60
+
+CALIBRANDO = True
+ap1 = PontoAcesso('001', calibrando = CALIBRANDO)
+ap1.RSSI_1M = 71
+ap2 = PontoAcesso('002', calibrando = CALIBRANDO)
+ap2.RSSI_1M = 72
+ap3 = PontoAcesso('003', calibrando = CALIBRANDO)
+ap3.RSSI_1M = 62
 
 caracteresPorCampo = {"ApId": 3, "SimioId": 3,
                       "RSSI": 3, "campoDeltaTimestamp": 6}
@@ -29,6 +36,7 @@ def Main():
             # Quando uma conexão for estabelecida:
             loopLeitura(portSerial)
         except KeyboardInterrupt:
+            PontoAcesso.imprimiMedias()
             break
 
 
@@ -97,7 +105,7 @@ def instanciaLeitura(mensagem, portSerial):
                 leitura = Leitura(ap_id=ap_id, simio_id=simio_id,
                                   rssi=rssi, dateTime=dateTime)
 
-                Arquivos.escreveArquivo(str(leitura), Arquivos.ARQUIVO_BACKUP)
+                #Arquivos.escreveArquivo(str(leitura), Arquivos.ARQUIVO_BACKUP)
                 logger.info("Leitura: %s" % str(leitura))
 
         else:
@@ -118,7 +126,7 @@ def checaMensagem(mensagem):
         return False
 
     else:
-        logger.debug("Mensagem bem formatada: %s" % str(mensagem))
+        logger.debug("Mensagem bem formatada!")
         return True
 
 
@@ -204,7 +212,7 @@ def processaLeitura(leitura):
     if leitura:
 
         if QueriesMYSQL.inserirDistancia(leitura.ap_id, leitura.simio_id, leitura.distance, leitura.dateTime):
-            logger.debug("Passando leitura para BD %s" % str(leitura))
+            logger.debug("Passando leitura para BD")
 
         else:
             Arquivos.escreveArquivo(
@@ -218,7 +226,7 @@ def processaLeitura(leitura):
 def processaLeituras(leituras):
     leiturasParaescrever = [leitura for leitura in leituras if leitura]
     if QueriesMYSQL.inserirDistancias(leiturasParaescrever):
-        logger.debug("Passando leitura para BD %s" % str(leiturasParaescrever))
+        logger.debug("Passando leitura para BD")
 
     else:
         #Arquivos.escreveArquivo(
@@ -260,9 +268,9 @@ def iniciaLogger():
 
 logger = iniciaLogger()
 Leitura.logger = logger
+PontoAcesso.logger = logger
 ConexaoSerial.logger = logger
 
 Leitura.CONSTANTE_ELETROMAGNETICA = CONSTANTE_ELETROMAGNETICA
-Leitura.RSSI_1M = RSSI_1M
 
 Main()

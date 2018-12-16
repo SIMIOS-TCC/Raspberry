@@ -1,3 +1,34 @@
+# -*- coding: utf-8 -*-
+
+class PontoAcesso:
+
+    pontosAcesso = {}
+
+    def __init__(self, ap_id, calibrando):
+        self.ap_id = ap_id
+        self.calibrando = calibrando
+
+        PontoAcesso.pontosAcesso[self.ap_id] = self
+
+        self.medidas = []
+        self.media = 0
+
+    def atualizaMedia(self, novaMedida):
+        self.medidas.append(float(novaMedida))
+
+        self.media = sum(self.medidas)/len(self.medidas)
+        if self.calibrando == True:
+            PontoAcesso.logger.info("Numero de medidas do ponto %s: %i" % (self.ap_id, len(self.medidas)))
+            #print ("Numero de medidas do ponto %s: %i" % (self.ap_id, len(self.medidas)))
+            PontoAcesso.logger.info("Media do ponto %s: %f." % (self.ap_id, self.media))
+            #print ("Media do ponto %s: %f." % (self.ap_id, self.media))
+
+    @staticmethod
+    def imprimiMedias():
+        for ap_id, pontoAcesso in PontoAcesso.pontosAcesso.iteritems():
+            PontoAcesso.logger.info("Numero de medidas do ponto %s: %i" % (ap_id, len(pontoAcesso.medidas)))
+            PontoAcesso.logger.info("Media do ponto %s: %f." % (ap_id, pontoAcesso.media))
+        
 class Leitura:
 
     contagem = 0
@@ -13,13 +44,16 @@ class Leitura:
         self.ap_id = ap_id
         self.simio_id = simio_id
 
-        self.distance = str(Leitura.coverteEmDistancia(int(rssi)))
+        self.distance = str(Leitura.coverteEmDistancia(int(rssi), ap_id))
         self.rssi = rssi
 
         self.dateTime = dateTime
 
         #Leitura.logger.debug("Leitura criada: %s" % self)
         Leitura.leiturasNaoRealizadas.append(self)
+
+        PontoAcesso.pontosAcesso[ap_id].atualizaMedia(rssi)
+
 
     def __str__(self):
         returnString = ""
@@ -31,9 +65,9 @@ class Leitura:
         return returnString
 
     @staticmethod
-    def coverteEmDistancia(rssi):
+    def coverteEmDistancia(rssi, ap_id):
         #RSSI = -10*n*log10(d) + A
-        return 10**((Leitura.RSSI_1M - rssi)/(-10*Leitura.CONSTANTE_ELETROMAGNETICA))
+        return 10**((PontoAcesso.pontosAcesso[ap_id].RSSI_1M - rssi)/(-10*Leitura.CONSTANTE_ELETROMAGNETICA))
 
 
 class PortTest:
@@ -53,3 +87,5 @@ class PortTest:
 
     def write(self, mensagem):
         PortTest.resultados.append(mensagem)
+
+        
